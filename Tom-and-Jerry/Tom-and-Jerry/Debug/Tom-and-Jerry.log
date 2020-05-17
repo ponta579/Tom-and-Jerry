@@ -1,0 +1,5 @@
+﻿  usrClass.cpp
+  源.cpp
+  正在生成代码...
+LINK : warning LNK4076: 增量状态文件“\\vmware-host\Shared Folders\桌面\winCpp\gameProject\Tom-and-Jerry\Debug\Tom-and-Jerry.ilk”无效(将删除)；正以非增量方式链接
+  Tom-and-Jerry.vcxproj -> \\vmware-host\Shared Folders\桌面\winCpp\gameProject\Tom-and-Jerry\Debug\Tom-and-Jerry.exe
