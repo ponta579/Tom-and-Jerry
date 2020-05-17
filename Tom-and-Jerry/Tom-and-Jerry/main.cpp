@@ -17,19 +17,19 @@ tuffyClass* tuffy[maxNum] = { NULL };
 dogClass* dog[maxNum] = { NULL };
 cheeseClass* cheese[maxNum] = {NULL};
 usrClass* tom = NULL;
-int tomWidth , tomHeight , tomDistX , tomDistY ;//tomµÄ³õÊ¼²ÎÊı
-int tomW , tomH ,tomDx , tomDy ;//tomµÄ¼´Ê±²ÎÊı
-int jerryNum , tuffyNum ,dogNum,cheeseNum;//¸÷Ààµ±Ç°ÊıÁ¿
+int tomWidth , tomHeight , tomDistX , tomDistY ;//tomçš„åˆå§‹å‚æ•°
+int tomW , tomH ,tomDx , tomDy ;//tomçš„å³æ—¶å‚æ•°
+int jerryNum , tuffyNum ,dogNum,cheeseNum;//å„ç±»å½“å‰æ•°é‡
 int jerryW, jerryH, jerryDx, jerryDy, jerryScore;
 int tuffyW, tuffyH, tuffyDx, tuffyDy, tuffyScore;
 int dogW, dogH , dogDx , dogDy, dogScore;
 int cheeseW, cheeseH, cheeseDx, cheeseDy, cheeseScore;
-int score;//Íæ¼Ò×Ü·Ö
-int myClock;//ÓÎÏ·µ¹¼ÆÊ±
-int life ;//³õÊ¼ÉúÃü
-bool gamebegin ;//ÅĞ¶¨ÊÇ·ñÔÚ¿ªÊ¼½çÃæ
-bool gameover;//ÅĞ¶¨ÓÎÏ·ÊÇ·ñ½áÊø
-bool intro;//ÅĞ¶¨ÊÇ·ñÔÚÓÎÏ·ËµÃ÷½çÃæ
+int score;//ç©å®¶æ€»åˆ†
+int myClock;//æ¸¸æˆå€’è®¡æ—¶
+int life ;//åˆå§‹ç”Ÿå‘½
+bool gamebegin ;//åˆ¤å®šæ˜¯å¦åœ¨å¼€å§‹ç•Œé¢
+bool gameover;//åˆ¤å®šæ¸¸æˆæ˜¯å¦ç»“æŸ
+bool intro;//åˆ¤å®šæ˜¯å¦åœ¨æ¸¸æˆè¯´æ˜ç•Œé¢
 ACL_Image tomImg;
 ACL_Image jerryImg;
 ACL_Image tuffyImg;
@@ -43,8 +43,8 @@ ACL_Image introImg;
 ACL_Sound getSound;
 ACL_Sound ingSound;
 
-void initGame();//³õÊ¼»¯ÓÎÏ·
-void gameOver();//ÓÎÏ·½áÊø
+void initGame();//åˆå§‹åŒ–æ¸¸æˆ
+void gameOver();//æ¸¸æˆç»“æŸ
 void creat(usrClass* usrclass);
 void creat(jerryClass* stillclass);
 void creat(tuffyClass* tuffyclass);
@@ -52,9 +52,9 @@ void creat(dogClass* dogclass);
 void creat(cheeseClass* cheeseclass);
 void keyboardEvent(int key, int event);
 void timerEvent(int id);
-void charEvent(char c);//¿ªÊ¼½çÃæ×Ö·û¶ÁÈ¡
+void charEvent(char c);//å¼€å§‹ç•Œé¢å­—ç¬¦è¯»å–
 void paint();
-void picPaint(ACL_Image* img);//¿ªÊ¼¡¢½áÊø¡¢ËµÃ÷½çÃæ»æÖÆ
+void picPaint(ACL_Image* img);//å¼€å§‹ã€ç»“æŸã€è¯´æ˜ç•Œé¢ç»˜åˆ¶
 void scorePaint(int x,int y);
 int Setup()
 {	
@@ -78,14 +78,14 @@ int Setup()
 	initGame();
 	srand((unsigned)time(NULL));
 	picPaint(&startImg);
-	playSound(ingSound, 1);//Ñ­»·²¥·Å
-	registerCharEvent(charEvent);//¿ªÊ¼½çÃæ ×¢²á×Ö·ûÊäÈë»Øµ÷º¯Êı
+	playSound(ingSound, 1);//å¾ªç¯æ’­æ”¾
+	registerCharEvent(charEvent);//å¼€å§‹ç•Œé¢ æ³¨å†Œå­—ç¬¦è¾“å…¥å›è°ƒå‡½æ•°
 	return 0;
 }
 void initGame()
 {
-	tomWidth = 100, tomHeight = 100, tomDistX = 2, tomDistY = 2;//tomµÄ³õÊ¼²ÎÊı
-	tomW = tomWidth, tomH = tomHeight, tomDx = tomDistX, tomDy = tomDistY;//tomµÄÏÖÔÚ²ÎÊı
+	tomWidth = 100, tomHeight = 100, tomDistX = 2, tomDistY = 2;//tomçš„åˆå§‹å‚æ•°
+	tomW = tomWidth, tomH = tomHeight, tomDx = tomDistX, tomDy = tomDistY;//tomçš„ç°åœ¨å‚æ•°
 	jerryNum = 0, tuffyNum = 0, dogNum = 0, cheeseNum = 0;
 	jerryW = 60, jerryH = 60;
 	jerryDx = 2, jerryDy = 2, jerryScore = 1;
@@ -95,9 +95,9 @@ void initGame()
 	dogDx = 2; dogDy = 2; dogScore = -5;
 	cheeseW = 50, cheeseH = 50;
 	cheeseDx = 1, cheeseDy = 1, cheeseScore = 4;
-	score = 0;//Íæ¼Ò×Ü·Ö³õÊ¼»¯Îª0
-	myClock = 120;//ÓÎÏ·µ¹¼ÆÊ±120s
-	life = 5;//³õÊ¼ÉúÃü5Ìõ
+	score = 0;//ç©å®¶æ€»åˆ†åˆå§‹åŒ–ä¸º0
+	myClock = 120;//æ¸¸æˆå€’è®¡æ—¶120s
+	life = 5;//åˆå§‹ç”Ÿå‘½5æ¡
 	gamebegin = 1;
 	gameover = 0;
 	intro = 0;
@@ -109,7 +109,7 @@ void gameOver()
 	cancelTimer(2);
 	delete tom;
 	tom = NULL;
-	for (int i = 0; i < jerryNum; i++)//ÊÍ·Åjerry
+	for (int i = 0; i < jerryNum; i++)//é‡Šæ”¾jerry
 	{
 		if (jerry[i])
 		{
@@ -117,7 +117,7 @@ void gameOver()
 			jerry[i] = NULL;
 		}
 	}
-	for (int i = 0; i < tuffyNum; i++)//ÊÍ·Åtuffy
+	for (int i = 0; i < tuffyNum; i++)//é‡Šæ”¾tuffy
 	{
 		if (tuffy[i])
 		{
@@ -125,7 +125,7 @@ void gameOver()
 			tuffy[i] = NULL;
 		}
 	}
-	for (int i = 0; i < dogNum; i++)//ÊÍ·Ådog
+	for (int i = 0; i < dogNum; i++)//é‡Šæ”¾dog
 	{
 		if (dog[i])
 		{
@@ -133,7 +133,7 @@ void gameOver()
 			dog[i] = NULL;
 		}
 	}
-	for (int i = 0; i < cheeseNum; i++)//ÊÍ·Åtuffy
+	for (int i = 0; i < cheeseNum; i++)//é‡Šæ”¾tuffy
 	{
 		if (cheese[i])
 		{
@@ -154,31 +154,31 @@ void gameOver()
 }
 void charEvent(char c)
 {
-	if ( ( (c == 'p'||c=='P')&&gamebegin==1 )||(c == 'p' && intro == 1) )//ÔÚ¿ªÊ¼½çÃæ»òËµÃ÷½çÃæÊäÈëp
+	if ( ( (c == 'p'||c=='P')&&gamebegin==1 )||(c == 'p' && intro == 1) )//åœ¨å¼€å§‹ç•Œé¢æˆ–è¯´æ˜ç•Œé¢è¾“å…¥p
 	{
 		creat(tom);
 		creat(jerry[jerryNum]);
 		registerKeyboardEvent(keyboardEvent);
 		registerTimerEvent(timerEvent);
-		startTimer(0, 1000);//×Ô¶¯ÀàÉú³É¶¨Ê±Æ÷
-		startTimer(1, 20);//×Ô¶¯ÀàÒÆ¶¯¶¨Ê±Æ÷
-		startTimer(2, 1000);//µ¹¼ÆÊ±¶¨Ê±Æ÷
-		gamebegin=0;//´ËÊ±²»ÔÚ¿ªÊ¼½çÃæ
-		intro = 0;//´ËÊ±²»ÔÚËµÃ÷½çÃæ
+		startTimer(0, 1000);//è‡ªåŠ¨ç±»ç”Ÿæˆå®šæ—¶å™¨
+		startTimer(1, 20);//è‡ªåŠ¨ç±»ç§»åŠ¨å®šæ—¶å™¨
+		startTimer(2, 1000);//å€’è®¡æ—¶å®šæ—¶å™¨
+		gamebegin=0;//æ­¤æ—¶ä¸åœ¨å¼€å§‹ç•Œé¢
+		intro = 0;//æ­¤æ—¶ä¸åœ¨è¯´æ˜ç•Œé¢
 	}
-	if ( (c == 'h' ||c=='H')&& gamebegin == 1)//ÔÚÓÎÏ·³õÊ¼½çÃæ°´h¼ü½øÈëÓÎÏ·ËµÃ÷½çÃæ
+	if ( (c == 'h' ||c=='H')&& gamebegin == 1)//åœ¨æ¸¸æˆåˆå§‹ç•Œé¢æŒ‰hé”®è¿›å…¥æ¸¸æˆè¯´æ˜ç•Œé¢
 	{
 		picPaint(&introImg);
-		intro = 1;//´ËÊ±ÔÚintro½çÃæ
-		gamebegin = 0;//´ËÊ±²»ÔÚbegin½çÃæ
+		intro = 1;//æ­¤æ—¶åœ¨introç•Œé¢
+		gamebegin = 0;//æ­¤æ—¶ä¸åœ¨beginç•Œé¢
 	}
-	if ( (c == 'r' || c == 'R') && intro == 1 )//ÔÚÓÎÏ·ËµÃ÷½çÃæ°´r
+	if ( (c == 'r' || c == 'R') && intro == 1 )//åœ¨æ¸¸æˆè¯´æ˜ç•Œé¢æŒ‰r
 	{
 		picPaint(&startImg);
-		intro = 0;//²»ÔÚËµÃ÷½çÃæ
-		gamebegin = 1;//ÓÖ»Øµ½ÁË³õÊ¼½çÃæ
+		intro = 0;//ä¸åœ¨è¯´æ˜ç•Œé¢
+		gamebegin = 1;//åˆå›åˆ°äº†åˆå§‹ç•Œé¢
 	}
-	if ( (c == 'r' || c == 'R') && gameover == 1 )//ÓÎÏ·Ê§°Ü½çÃæ°´r
+	if ( (c == 'r' || c == 'R') && gameover == 1 )//æ¸¸æˆå¤±è´¥ç•Œé¢æŒ‰r
 	{
 		picPaint(&startImg);
 		initGame();
@@ -300,7 +300,7 @@ void paint()
 		putImageScale(&bgImg, 0, 0, winRect.w, winRect.h);
 		if (tom)
 		{
-			switch (score / 15)//·ÖÊıÎª15µÄ±¶ÊıÊ±£¬tom±ä´ó,ËÙ¶È±ä¿ì.75·ÖÊ±Ìå»ı×î´ó
+			switch (score / 15)//åˆ†æ•°ä¸º15çš„å€æ•°æ—¶ï¼Œtomå˜å¤§,é€Ÿåº¦å˜å¿«.75åˆ†æ—¶ä½“ç§¯æœ€å¤§
 			{
 			case 0:
 				break;
@@ -362,7 +362,7 @@ void paint()
 				cheese[i]->draw(cheeseW, cheeseH);
 		}
 		int lifeX = 250, lifeY = 10;
-		for (int i = 0; i < life; i++)//ÉúÃüÖµ»æÖÆ
+		for (int i = 0; i < life; i++)//ç”Ÿå‘½å€¼ç»˜åˆ¶
 		{
 			lifeX += 40;
 			putImageTransparent(&cheeseImg, lifeX, lifeY, 30, 30, WHITE);
@@ -376,7 +376,7 @@ void paint()
 		endPaint();
 	}
 }
-void picPaint(ACL_Image* img)//¿ªÊ¼½çÃæ»æÖÆ
+void picPaint(ACL_Image* img)//å¼€å§‹ç•Œé¢ç»˜åˆ¶
 {
 	beginPaint();
 	clearDevice();
@@ -397,8 +397,8 @@ void timerEvent(int id)
 	int randNum = rand() % 101;
 	switch (id)
 	{
-	case 0://×Ô¶¯ÀàÉú³É
-		if (score <= 10)//µÚÒ»¹Ø
+	case 0://è‡ªåŠ¨ç±»ç”Ÿæˆ
+		if (score <= 10)//ç¬¬ä¸€å…³
 		{
 			if (randNum <= 90)
 			{
@@ -417,7 +417,7 @@ void timerEvent(int id)
 				}
 			}
 		}
-		else if (score > 10 && score <= 30)//µÚ¶ş¹Ø
+		else if (score > 10 && score <= 30)//ç¬¬äºŒå…³
 		{
 			if (randNum <= 72)
 			{
@@ -454,7 +454,7 @@ void timerEvent(int id)
 			}
 			*/
 		}
-		else if (score > 30 && score <= 50)//µÚÈı¹Ø
+		else if (score > 30 && score <= 50)//ç¬¬ä¸‰å…³
 		{
 			if (randNum <= 60)
 			{
@@ -489,7 +489,7 @@ void timerEvent(int id)
 				}
 			}
 		}
-		else if (score > 50&&score<=70)//µÚËÄ¹Ø
+		else if (score > 50&&score<=70)//ç¬¬å››å…³
 		{
 			if (randNum <= 57)
 			{
@@ -524,7 +524,7 @@ void timerEvent(int id)
 				}
 			}
 		}
-		else if (score>70)//µÚÎå¹Ø
+		else if (score>70)//ç¬¬äº”å…³
 		{
 			if (randNum <= 45)
 			{
@@ -560,8 +560,8 @@ void timerEvent(int id)
 			}
 		}
 		break;
-	case 1://×Ô¶¯ÀàÒÆ¶¯
-		for (int i = 0; i < jerryNum; i++)//jerryÒÆ¶¯
+	case 1://è‡ªåŠ¨ç±»ç§»åŠ¨
+		for (int i = 0; i < jerryNum; i++)//jerryç§»åŠ¨
 		{
 			if (jerry[i] != NULL)
 			{
@@ -575,7 +575,7 @@ void timerEvent(int id)
 				}
 			}
 		}
-		for (int i = 0; i < tuffyNum; i++)//tuffyÒÆ¶¯
+		for (int i = 0; i < tuffyNum; i++)//tuffyç§»åŠ¨
 		{
 			if (tuffy[i] != NULL)
 			{
@@ -637,7 +637,7 @@ void timerEvent(int id)
 			}
 		}
 		break;
-	case 2://µ¹¼ÆÊ±
+	case 2://å€’è®¡æ—¶
 		myClock -= 1;
 		if (myClock == 0)
 		{
