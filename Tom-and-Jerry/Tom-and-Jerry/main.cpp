@@ -365,7 +365,7 @@ void paint()
 		for (int i = 0; i < life; i++)//生命值绘制
 		{
 			lifeX += 40;
-			putImageTransparent(&cheeseImg, lifeX, lifeY, 30, 30, WHITE);
+			putImageTransparent(&cheeseImg, lifeX, lifeY, 30, 30, RGB(32, 30, 31));
 		}
 		char txt[20];
 		if (score < 0)
