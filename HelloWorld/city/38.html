@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang:"zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>中国-三峡大坝</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放 </span>
+    <span class="illustrate">中国-三峡大坝</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../sxdb/welcome1.jpeg" />
+        <img class="welcomeImg" src="../sxdb/welcome2.jpeg" />
+        <img class="welcomeImg" src="../sxdb/welcome3.jpeg" />
+        <img class="welcomeImg" src="../sxdb/welcome4.jpeg" />
+        <img class="welcomeImg" src="../sxdb/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">中国-三峡大坝</h1>
+      <p class="wE">Welcome to Three Gorges Dam，China</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;宜昌，历来被称作“川鄂咽喉，鄂西重镇”、“三峡门户”，是巴楚文化发源地。这里古称“夷陵”，地处长江中上游结合部，宜昌拥有举世瞩目的长江三峡水利枢纽工程、葛洲坝水利枢纽等百余处水电枢纽工程。这里不光有风光旖旎的长江三峡，让人迷醉的清江土家风情，还有屈原祠、昭君故里、关陵等古代名人文化遗址；而三国古战场历史遗风、三游洞的文墨千古、三峡水利枢纽的雄伟景观更是为宜昌旅游神奇浪漫、多姿多彩的迷人画卷增添了浓重的色彩。<br/> 
+      &emsp;&emsp;三峡大坝，位于中国湖北省宜昌市三斗坪镇境内，距下游葛洲坝水利枢纽工程38公里，是当今世界最大的水利发电工程——三峡水电站的主体工程、三峡大坝旅游区的核心景观、三峡水库的东端。三峡大坝工程包括主体建筑物及导流工程两部分，全长约3335m，坝顶高程185米，工程总投资为954.6亿人民币，于1994年12月14日正式动工修建，2006年5月20日全线修建成功。三峡水电站2018年发电量突破1000亿千瓦时，创单座电站年发电量世界新纪录。<br/> 
+      &emsp;&emsp;截至2020年10月22日14时，三峡水库已蓄水至高程173.55米。 
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../sxdb/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>&emsp;&emsp;1994年12月14日，国务院总理在宜昌三斗坪向全世界宣布当今世界第一大的水电工程三峡工程正式开工。<br/> 
+      &emsp;&emsp;1997年11月8日，三峡工程胜利实现大江截流，第一阶段建设目标完成，大江截流后，水位从原来66米提高到88米，三峡一切景观不受影响。1998年，三峡工程进入第二阶段的建设。2000年，三峡工程机组安装奏序曲。<br/> 
+      &emsp;&emsp;2002年10月10日，国务院三峡工程二期工程验收委员会枢纽工程验收专家组会议在坝区召开，导流明渠截流前验收工作正式启动。10月21日，三峡大坝最关键的泄洪坝段已经全部建成，全线达到海拔185米大坝设计高程。10月25日，国务院召开长江三峡二期工程验收委员会全体会议，同意枢纽工程验收组关于在2002年11月份实施导流明渠截流的意见。 <br/> 
+      </p>
+    </div>
+  </div>
+  <!--历史沿革-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>&emsp;&emsp;过年时，宜昌人喜欢跟家人一起灌香肠、晒腊肉，一家人腌腊鱼腊肉、灌香肠。<br/> 
+	 &emsp;&emsp;昌在长江两岸，饮食仍是南方特点。一般以大米为主，辅以麦面、玉米（俗称包谷）、红薯、土豆（俗称洋芋）等杂粮。宜昌菜肴的味道偏辣，而兼有酸、甜、苦、辛诸味，咸淡适中，制作上擅长熏、烫、蒸、炸、炒、凉、生。日常餐中以素菜为主，荤菜为辅。城区家庭一般不自做早餐，习惯到餐馆“过早” 。早点以馒头、包子、油条、油饼、油香、京果条、蒸饺、豆浆、稀饭、醪糟为主。 宜昌特色小吃有豆皮、豆饼、顶顶糕、凉虾、磁瓦子、醪糟汤圆、醪糟鸡蛋、炸汤圆、炸萝卜饺子、炸花卷、馓子、蜘蛛蛋、卤鸭脖、卤鸭头、卤鸡蛋、棒棒鸡、炕土豆、炕红薯等。 
+	  
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../sxdb/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;枝江民间吹打乐是由打击乐器、丝弦乐器、唢呐等结合在一起演奏的民间器乐体裁。其中打击乐器包括鼓（大鼓、堂鼓、板鼓、书鼓、战鼓等）、梆子（木鱼、木梆、竹梆等）、锣（大锣、小锣、苏锣、马锣、京锣、云锣、虎音锣等）、钹（大钹、小钹、川钹、小京镲）等，丝弦包括二胡、京胡、四弦等，唢呐包括高音唢呐和中音唢呐，另有大号等乐器。常用曲目有《山歌调》、《六字流板》、《正宫流板》、《春来》、《万年欢》等枝江民间吹打乐经过多年的发展演变，已形成了一种普遍、实用、极具地域特色的演奏风俗。它主要在民间的婚丧嫁娶及各种庆典、劳动和岁时节庆活动中演奏，以配合舞蹈等民间艺术形式。<br />
+      &emsp;&emsp;枝江民间吹打乐分为由打击乐器组合进行演奏的“粗乐”和在打击乐器演奏中杂夹唢呐、笛子、二胡、京胡等吹奏、丝弦乐器的“细乐”，粗乐又称武场，细乐又称文场。依技艺流派，枝江民间吹打乐分为上河（又称荆河）和下河两派；按地域则分为南河和北河两路。枝江民间吹打乐讲究十样“家业”（乐器）的完整组合，同时吸纳枝江本地山歌、田歌、五句子、小调等民间音乐元素，形成了“十番鼓”的技术种类和风格，具有浓郁的地方特色。<br />
+      &emsp;&emsp;枝江民间吹打乐经过几起几落的发展历程，虽几度处于濒危，但在地方政府及文化部门的努力下，得到了较好的传承和保护，成为鄂西南地区民间音乐艺术的一朵奇葩。2000年，枝江市被文化部正式命名为“中国民间艺术之乡”、“民间吹打乐之乡”。 
+       
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../sxdb/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">萝卜饺子</h2>
+          <span>&emsp;&emsp;萝卜饺子是湖北宜昌市著名的传统小吃之一。萝卜饺子虽然也叫饺子，但其制作原料以及制作方法却与北方水饺大相径庭。萝卜饺子将萝卜切成丝拌上辣椒面、花椒粉、蒜（葱）苗、精盐等调料、油炸时，先在特制的弯月状铁勺中放入底浆，再放上拌好的萝卜丝作馅，再盖上浆，放入油锅中炸至金黄色即成。食之外酥内软、辣而不刺，味鲜可口。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../sxdb/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">土家蒸肉</h2>
+        <span>&emsp;&emsp;土家蒸肉属于鄂菜系。由玉米面、鲜肉、南瓜、土豆、炸辣椒制成。然后把做好的蒸肉盛进土家蒸蒸肉的专用蒸格并放于锅里蒸，约半个小时光景见蒸格有大气冒出即可食用。其香奇醇其味奇美，鲜香，色香味俱全。实是土家一大特色小吃。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../sxdb/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">顶顶糕</h2>
+        <span>&emsp;&emsp;顶顶糕以大米粉、糯米粉、红糖粉为原料，放入特制的小木格内，加上一点红糖桂花，放在滚水的瓶口利用那浓浓的蒸汽，只需两三分钟，一块块圆圆的小白糕就做成了。其特点是松软带糯，味清香甜正。顶顶糕具有红糖可以补血，补气的功效。由于价格实惠、口感香甜，深受人们的喜爱。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml:   'http://pf.bigpixel.cn/api/tour/xml/zh-CN/884999994182995968.xml?v=202106211742033',
+      target:"pano",
+     target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

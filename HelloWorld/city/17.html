@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>瑞士-苏黎世</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">瑞士-苏黎世</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../sls/welcome1.jpeg" />
+        <img class="welcomeImg" src="../sls/welcome2.jpeg" />
+        <img class="welcomeImg" src="../sls/welcome3.jpeg" />
+        <img class="welcomeImg" src="../sls/welcome4.jpeg" />
+        <img class="welcomeImg" src="../sls/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">瑞士-苏黎世</h1>
+      <p class="wE">Welcome to Zurich，Switzerland</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;苏黎世是瑞士第一大城市和经济商业文化中心。说到世界消费水平最高的城市，无论在哪个年代苏黎世都毫无悬念的排在前三甲位置。<br />
+      &emsp;&emsp;虽然贵为瑞士的大都会，但是纵观整个欧洲从面积小还是从居住人口也不多。苏黎世位于从苏黎世湖北端开始的利马特河四周被长满树林的小山包围。利马特河和锡尔河的交汇于市火车总站广场，邻近瑞士国家博物馆。地理上和历史上的市中心是利马特河左岸的一个小山岗林登霍夫，在利马特河离开苏黎世湖的源头北面约700米。现在城市扩展超越小山所限的地界。<br />
+      &emsp;&emsp;苏黎世的魅力在于它的海纳百川，在这里你可以碰到来自世界各地各种肤色说各种语言的人充斥着这个年代久远同时又朝气蓬勃的城市。在这里你永远不会觉得无聊，无论是有古典情怀还是有现代情结的游客都可以在这里找到共鸣。每年这里都会举办无数的演唱会、演奏会、歌剧，让人目不暇接。夏天，可以从这里坐车去周边的山上踏青郊游。冬天，可以在城市任何一个角落欣赏雪景。作为瑞士第一大城市的苏黎世不像巴黎柏林那样宏大而张扬，它只是一直静静的躺在苏黎世湖边，用它独有的风景吸引并迎接那些懂得欣赏它的人们的到来。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../sls/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp; 苏黎世在罗马帝国时，是通过水路向帝国运送货物的主要收税点，后来成为神圣罗马帝国的领地，1218年成为帝国属下的自由城，1351年加入瑞士联邦，成为瑞士联邦的第五个州，1440年由于和其他州发生土地纠纷，而引发战争，被瑞士联邦开除，1446年在内战中被击败, 1450年重新被联邦接纳。<br />
+        &emsp;&emsp; 1839年9月6日的苏黎世叛乱后，城市为市民的要求而扩展。在17世纪建成的围墙在没有被围攻的情形下被拆毁，以缓和郊区人士对城市霸权的忧虑。1859年奥地利、法国和萨丁尼亚签订苏黎世条约。从1847年开始，瑞士境内的第一条铁路——“西班牙-布罗特利-巴恩铁路”把苏黎世和巴登连接在一起，而苏黎世火车总站则成为瑞士铁路网的起点。现在的总站大楼的历史可以上溯到1871年。<br />
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;隶属德语区的苏黎世人有着德国人的严谨，非常准时准点。不会过分热情，但十分友好也乐于助人。他们非常遵守先来后到的规矩，无论是在机场、酒店、餐厅、问讯处、ATM都要井然有序的排队并且与已经轮到人保持一点距离，以示尊重。在公共场合不要大声喧哗。如果去比较热门的餐厅用餐最好事先打电话预约，以免长时间等待造成的尴尬。<br />
+        &emsp;&emsp;瑞士人不喜欢讨价还价，除非是二手市场，但也不是每次都能成功的，对于喜欢砍价的穷游儿来说，会在这里碰到很大的挑战。      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../sls/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;苏黎世是瑞士文化、教育和科研中心之一。苏黎世湖畔的“馥劳”教堂始建于公元853年，为典型的罗马式建筑。教堂不远处全市最美的巴罗克式建筑是昔日的酒业公会。河对岸正对“馥劳”教堂的建筑是苏黎世大教堂，其一对高耸的塔楼建于15世纪，它是苏黎世城的重要标志。市政厅则是一座华丽的意大利文艺复兴风格的建筑。苏黎世市有各类博物馆、美术馆50多处。苏黎世联邦高工、苏黎世大学等院校均是举世闻名的高等学府，我留瑞的近千名学生中约一半在上述两校深造。瑞士国家博物馆和图书馆也设在这里。列宁1916-1917年在该市从事研究工作，完成了著名的《帝国主义是资本主义发展的最高阶段》一书。    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../sls/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">苏黎世小牛肉</h2>
+          <span>&emsp;&emsp;来苏黎世必吃的传统特色菜 (Geschnetzeltes)。将切成薄片或小块的牛肉，再加入新鲜的蘑菇和香浓奶油，添加一些白葡萄酒烹饪而成的，小牛肉汁适合搭配煎土豆丝饼品尝，这道菜是当地人的最爱。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../sls/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">奶酪火锅</h2>
+        <span>&emsp;&emsp;在瑞士最冷的月份，瑞士马路上总会飘荡着烧焦的松木味，而到了山坡里，则会有辛辣的拉可雷特芝士的香味来迎接你。这道菜和奶酪火锅并称瑞士“国菜”。在瓦莱州，瑞士人会把当地的拉可雷特芝士放在火堆上慢慢烤，再把融化的芝士淋在切好的土豆、腌菜和洋葱上。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../sls/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">烤香肠</h2>
+			<span>&emsp;&emsp;主要原料是白香肠，配料是胡椒粉，番茄酱，芥末酱等。将白香肠刷上胡椒粉放烤架上烤熟即可。 汁香味美，回味无穷。营养丰富，老少皆宜，可补充体力，补血养虚。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="textjavascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/798358941502279680.xml?v=202106211742027',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

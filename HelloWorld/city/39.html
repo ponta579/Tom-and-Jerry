@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>南京</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">中国-南京</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../nj/welcome1.jpeg" />
+        <img class="welcomeImg" src="../nj/welcome2.jpeg" />
+        <img class="welcomeImg" src="../nj/welcome3.jpeg" />
+        <img class="welcomeImg" src="../nj/welcome4.jpeg" />
+        <img class="welcomeImg" src="../nj/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">中国-南京</h1>
+      <p class="wE">Welcome to Nanjing, China</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;“烟笼寒水月笼沙，夜泊秦淮近酒家”,商女一曲，便引得无数文人墨客趋之若鹜，几度心折。南京，承载更多的是厚重的历史与人文。每座山，每条水，每幢建筑，仿佛都在述说一段不寻常的历史。</br>
+      &emsp;&emsp;来南京，一定要看看古城墙，这是目前世界上规模最大的古都城墙。登上玄武湖南畔的台城，这段有600年历史的残垣断壁，西望钟山，北瞰幕府，眼下玄武湖水碧波荡漾，耳聆鸡鸣古寺钟声回荡，任你烟云过客，怎不心潮起伏？漫步颐和路公馆区，或是在1912街区来杯咖啡，在温暖的阳光下泡一个下午，看百年梧桐依次排列，一段段历史就此展开
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../nj/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;公元前333年，楚威王熊商于石头城筑金陵邑，金陵之名源于此。公元229年，吴大帝孙权在此建都，金陵从此崛起，使中国的政治中心走出黄河文化板块的格局，引领了长江流域及整个中国南方地区的发展，长期是中国南方的政治、经济、文化中心 。六朝时，作为中国的经济、文化、政治、军事中心的金陵，人口已达28万户，人口超过百万，是世界第一个人口超过百万的城市，也是当时世界上最大的城市。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;南京小吃，位列中国四大小吃之首，历史悠久，风味独特，品种繁多，自六朝时期流传至今已有千余年历史，多达百十多个品种。名点小吃有荤有素，甜咸俱有，形态各异，其中最具代表性的是秦淮河夫子庙地区，夫子庙秦淮小吃手工精细，造型美观，选料考究，风味独特。除夫子庙外，在湖南路、新街口、朝天宫、长乐路、山西路、中央门、惠民桥、燕子矶等地，也逐渐形成了比较集中的点心小吃群。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../nj/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;金陵是中国古典文化和风雅文化的代表城市，象征着古典中华文明，有“天下文枢”之称，金陵和罗马并称为“世界古典文明两大中心”，金陵文化在人类历史上产生了极其深远的影响。朱偰先生在比较了金陵、长安、洛阳、燕京四大古都后，言“此四都之中，文学之昌盛，人物之俊彦，山川之灵秀，气象之宏伟，以及与民族患难相共，休戚相关之密切，尤以金陵为最。”
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../nj/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">鸭血粉丝汤</h2>
+          <span>&emsp;&emsp;一提到南京大家首先就想到南京的鸭血粉丝汤，南京自古以来就有吃鸭子的习惯，南京人也善于把鸭子吃出花样来，鸭血粉丝汤就是其中之一，有人偶然把鸭血和粉丝结合在一起，反而得到了不一样的美味，这道美食也就流传了下来。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../nj/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">小笼包</h2>
+        <span>&emsp;&emsp;南方的小笼包的口味时候比较鲜甜的，有鲜肉小笼还有蟹粉小笼，这也是和北方的小笼不一样的地方，小笼的馅料之所以有很多汁水，是因为特别的制作工艺，除了肉馅之外，再放入肉冻进去，也就是肉汤结成的块，加热之后就会变成汤汁。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../nj/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">桂花鸭</h2>
+        <span>&emsp;&emsp;南京的盐水鸭也被叫做桂花鸭，盐水鸭的做法最大程度的保留了鸭子的原汁原味，但是吃起来也不会感到腻，而且保留了鸭肉的营养，对身体很有好处，盐水鸭最重要的一道工艺就是腌制。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/884999553646858240.xml?v=202106211742035',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

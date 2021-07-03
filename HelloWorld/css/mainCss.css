@@ -1,0 +1,335 @@
+@charset utf-8
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font: 14px/200% "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, "lvetica Neue", Helvetica, Arial, sans-serif;
+    /*大小/行高，微软雅黑，*/
+    color: #666
+}
+::selection{
+  background-color: #43676b;
+  color: white;
+}
+::-moz-selection{
+  background-color: #43676b;
+  color: white;
+}
+/*loading部分*/
+#loading {
+  position: fixed;
+  z-index: 400;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: table;
+  font-size: 0.9rem;
+  color: #595758;
+  background-color: #F1F1F1;
+}
+.imgBox{
+  display: table-cell;
+  vertical-align: middle;
+}
+#loadingImg{
+  width: 80px;
+  height: 80px;
+}
+/*导航部分*/
+.header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  height: 63.5px;
+  z-index: 2;
+  list-style: none;
+}
+.headerLi{
+  float: left;
+  width: 88px;
+  height: 63.5px;
+  -webkit-transition:all linear 0.30s;/*动画*/
+  -moz-transition:all linear 0.30s;
+  transition:all linear 0.30s;
+}
+.headerLiA{
+  display: block;
+  color: white;
+  height: 28px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  text-decoration: none;
+  -webkit-transition:all linear 0.30s;/*动画*/
+  -moz-transition:all linear 0.30s;
+  transition:all linear 0.30s;
+}
+.headerActive{
+  background-color: #43676b;/*主题色*/
+  float: left;
+  width: 88px;
+  height: 63.5px;
+  color: white;
+  -webkit-transition:all linear 0.30s;/*动画*/
+  -moz-transition:all linear 0.30s;
+  transition:all linear 0.30s;
+}
+.header li ul{
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding-left: 0px;
+  width: 88px;
+}
+.header li ul li{
+  float: none;
+  font-size: 14px;
+  line-height: 45px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition:all linear 0.2s;/*动画*/
+  -moz-transition:all linear 0.2s;
+  transition:all linear 0.2s;
+}
+.header li:hover ul{
+  display: block;
+}
+.header li ul li:hover{
+  background-color: #666;
+  color: white;
+}
+.header li:hover{
+  background-color: #111;
+  cursor: pointer;
+}
+.header li{
+  font-size: 15px;
+}
+a{
+  text-decoration:none;
+  color: #666;
+}
+/*内容部分*/
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8{
+    position: relative;
+    padding: 0 0 0 0;
+    width: 100%;
+    float: left;
+}
+.h1{
+  color: white;
+  font: 80px/200% "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, "lvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.full{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  background-color: #43676b;
+  z-index: 1;
+}
+.wE{
+  text-align: center;
+  font-size: 25px;
+  color:white;
+  margin-top: 0px;
+}
+.tt{
+  font-size: 20px;
+  padding-left: 1em;
+  border-left: 2px solid #43676b;
+  color: #111;
+  font-weight: normal;
+  font-family: "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+}
+.panorama{
+  width: 100%;
+  margin-top: 0;
+  float: left;
+}
+.explaination{
+  width: 100%;
+  height: 55px;
+  float: left;
+  position: relative;
+  top: -55px;
+  /*opacity: 0.8;*/
+  background-color: #117C6F/*#333导航灰 #43676b主题色 */;
+  display: inline;
+}
+.illustrate{
+  color: white;
+  font-size: 15px;
+  font-family: "\5FAE\8F6F\96C5\9ED1";/*微软雅黑*/
+  float: right;
+  padding-right: 10px;
+  margin-top: 13px;
+}
+.expImg{
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 13px;
+  float: left;
+}
+.welcome{
+  width: 100%;
+  height: 445px;
+  float: left;
+}
+.pic{
+  top: -55px;
+  position: relative;
+}
+.welcomeImg{
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  float: left;
+  position: absolute;
+}
+.rudis{
+  background-color: #2FC4B2/*#117C6F*/;
+}
+.swiper{
+  position: relative;
+  top: 415px;
+  margin-left: 10px;
+}
+.swiper b{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border:1.5px solid;
+  border-color: #2FC4B2/*#117C6F*/;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+#welcomeDsc{
+  position: relative;
+  z-index: 1;
+}
+.cityDscb{
+  float: left;
+  padding: 15vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+.history{
+  width: 100%;
+  float: left;
+  height: 500px;
+  overflow: hidden;
+}
+.historyImg{
+  padding-top: 30px;
+  width: 45%;
+  position: absolute;
+  height: 350px;
+  padding-left: 15vh;
+}
+.history2{
+  padding-left: 60%;
+  padding-right: 15vh;
+  padding-top: 5vh;
+  position: absolute;
+}
+.life{
+  float: left;
+  height: 430px;
+  background-color: #f8f8f8;
+  width: 100%;
+}
+.life2{
+  padding-left: 15vh;
+  padding-top: 10vh;
+  padding-bottom: auto;
+  padding-right: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.lifeImg{
+  position: absolute;
+  height: 300px;
+  padding-top: 10vh;
+  padding-left: 55%;
+  padding-right: 15vh;
+}
+.food{
+  width: 100%;
+  float: left;
+  height: 640px;
+  margin-top: 5vh;
+}
+.food1{
+  position: absolute;
+  margin-top:8vh;
+  background-color: #F1F1F1;
+  width: 25%;
+  height: 580px;
+}
+.foodImg{
+  width: 100%;
+  position: absolute;
+  height: 40%;
+}
+.foodDscb{
+  top: 40%;
+  position: absolute;
+  float: left;
+  padding: 1em 2em 1em 2em;
+}
+.footer{
+  float: left;
+  width: 100%;
+  margin-top: 17vh;
+  height: 120px;
+  background-color: #eee;
+}
+.footer1{
+  display: inline;
+  text-align: center;
+}
+#contact{
+  cursor: pointer;
+}
+.tool{
+  position: fixed;
+  bottom: 35px;
+  right: 5px;
+  z-index: 2;
+}
+#topImg{
+  width: 45px;
+  height: 45px;
+  opacity: 0.4;
+  float: right;
+  bottom: 55px;
+  position: relative;
+}
+#topImg:hover{
+  cursor: pointer;
+}
+#reloadImg{
+  width: 45px;
+  height: 45px;
+  opacity: 0.4;
+  float: right;
+  margin-right: -45px;
+  position: relative;
+}
+#reloadImg:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>中国-深圳</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">中国-深圳</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../sz/welcome1.jpeg" />
+        <img class="welcomeImg" src="../sz/welcome2.jpeg" />
+        <img class="welcomeImg" src="../sz/welcome3.jpeg" />
+        <img class="welcomeImg" src="../sz/welcome4.jpeg" />
+        <img class="welcomeImg" src="../sz/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">中国-深圳</h1>
+      <p class="wE">Welcome to Shenzhen, China</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;深圳，简称“深”，别称鹏城，是广东省地级市，国家计划单列市，超大城市，国务院批复确定的中国经济特区、全国性经济中心城市和国际化城市。全市下辖9个区，总面积1997.47平方千米，建成区面积927.96平方千米。2019年荣登年度中国城市品牌前10强。深圳是中国改革开放的总设计师-先生亲自倡导设立的中国第一个经济特区。28年来，从中国南海之滨的小镇，到一座与香港合作打造世界级大都会的现代化城市，深圳是中国改革开放和现代化建设的精彩缩影。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../sz/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;深圳最早的前身为广州宝安县，深圳之名始见史籍于明朝永乐八年（1410年），1979年成立深圳市，1980年成为中国设立的第一个经济特区，中国改革开放的窗口和新兴移民城市，创造了举世瞩目的“深圳速度”，被誉为“中国硅谷”。在中国高新技术产业、金融服务、外贸出口、海洋运输、创意文化等多方面占有重要地位，也在中国的制度创新、扩大开放等方面肩负着试验和示范的重要使命。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;深圳是全球10大热门旅游目的地城市，主要旅游景点有世界之窗、欢乐谷、深圳红树林、东部华侨城、莲花山、笔架山、梧桐山、羊台山、凤凰山、大小梅沙、仙湖植物园、东门老街、大鹏湾、中英街、欢乐海岸、大鹏所城等。2004年6月，历时半年多得的“深圳八景”评选活动揭晓，大鹏所城、莲山春早、侨城锦绣、深南溢彩、梧桐烟云、梅沙踏浪、一街两制和羊台叠翠在31处候选景观中脱颖而出，共同组成新的“深圳八景”。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../sz/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;深圳主要文化活动有中国国际文化产业博览交易会、深圳读书月、市民文化大讲堂深圳客家文化节。此外，“中国国际钢琴协奏曲大赛”、“深圳沙滩音乐节”、“鹏城金秋”艺术节、“深圳国际旅游文化节”、等文化节庆活动在深圳也有广泛影响。深圳有10个文艺家协会，19个专业艺术团体。拥有3000多人的文艺工作者队伍。塑造了“大剧院艺术节”、“国际水墨画双年展”、“国际双年钢琴比赛”、“中外艺术精品演出季”“深圳客家文化节”等文化节庆品牌。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../sz/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">沙井鲜蚝</h2>
+          <span>&emsp;&emsp;富含很高的蛋白质，干淀粉等营养成分，被人们誉为“海底牛奶”。用它来佐餐、清蒸、酥炸，都十分鲜美可口。蚝是深圳最著名的特产，以沙井蚝最著称于世。清蒸生蚝，清蒸是中国人特有的烹饪技法,保留食材原有味道又不会让水分流失。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../sz/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">光明乳鸽</h2>
+        <span>&emsp;&emsp;红烧光明乳鸽是广东省深圳市的一道传统名菜，属于粤菜，该菜品以鸽肉作为主要食材，被称为天下第一鸽；该菜品也是深圳三大特产之一，因其特有的美味而成为深圳市民广为人知的特色美食。为光明农场四大美食之一，以润、滑、甜、嫩为特点，滋味浓鲜。烹制的“光明乳鸽”，因皮脆肉滑、鲜嫩味美受到市民喜爱。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../sz/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">南澳海胆</h2>
+        <span>&emsp;&emsp;有南方特有的娇嫩，它们一般生活在水深1米多的石头上、石缝里，有着好看的金黄色，肉质幼嫩、细滑，却带点酸味。海胆一般都是蒸制,将其与鲜嫩的豆腐一起炖制,突出了海胆的鲜美,而且变得不再单调,是款十分受欢迎的一道土菜。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/771926228000051200.xml?v=202106211742041',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

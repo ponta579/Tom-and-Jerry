@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- 主CSS文件 -->
+  <link rel="stylesheet" type="text/css" href="./css/mainCss.css">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="./img/icon.png" />
+  <style type="text/css">
+    .bg
+    {
+      background-image:url(./img/home.jpeg);
+      background-size: 100% 100%;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+    }
+    .center-in-center{
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      float: left;
+    }
+    .start {
+      background-color: transparent;
+      color: white;
+      border-color: white;
+      cursor: pointer;
+      padding: 10px 20px 10px 20px;
+      font-size:16px;
+      font-family: Hiragino Sans GB,微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+      border-radius:5px;
+      width: 172px;
+      height: 48px;
+      -webkit-transition:all linear 0.30s;/*动画*/
+      -moz-transition:all linear 0.30s;
+      transition:all linear 0.30s;
+    }
+    .start:hover{
+      color: white;
+      background-color: #43676b;
+      outline: none;
+      border-radius:5px;
+      border-color: white;
+    }
+    .bt{
+      float: left;
+      position: relative;
+      width: 100%;
+      height: 48px;
+      text-align: center;
+    }
+    .h1{
+      color: white;
+      font: 75px/200% "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, "lvetica Neue", Helvetica, Arial, sans-serif;
+      height: 25%;
+    }
+    .homeFooter{
+      float: left;
+      width: 100%;
+      height: 50px;
+      color: white;
+      bottom: 0;
+      position: absolute;
+    }
+    .homeFooter1{
+      display: inline;
+      text-align: center;
+    }
+    #panel{
+      display: none;/*先将其隐藏*/
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .cityList{
+      color: white;
+      position: absolute;
+      top: 120px;
+      width: 100%;
+      line-height: 30px;
+      font-size: 15px;
+      height: 100%;
+      list-style: none;
+    }
+    .cityList li a{
+      color: white;
+    }
+    .foreign{
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      float: left;
+      margin-left: 100px;
+      top: 20px;
+    }
+    .domestic{
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      margin-left: 650px;
+      top: 20px;
+    }
+    #foreignCity{
+      left: 0px;
+      top: 90px;
+      font-size: 30px;
+      position: absolute;
+    }
+    #domesticCity{
+      left: 0px;
+      top: 90px;
+      font-size: 30px;
+      position: absolute;
+    }
+  </style>
+  <title>Hello World</title>
+</head>
+<body class="bg">
+  <!--loading-->
+  <!--div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="./img/homeLoading.gif" alt="loading..." />
+      <p style="font-size: 20px">Hello World!</p>
+    </div>
+  </div-->
+  <!--导航栏-->
+  <ul class="header">
+    <li class="headerActive"><span class="headerLiA">首页</span></li>
+    <li class="headerLi" id="flip"><span class="headerLiA">城市列表</span></li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--首页内容-->
+  <div class="center-in-center">
+    <h1 class="h1" style="text-align:center;margin-bottom: 10px">&nbsp; 世界那么大，我可想看看。</h1>
+    <div class="bt">
+      <button class="start" id="begin" style="display: inline;">「点击开始穿越」</button>
+    </div>
+  </div>
+  <div id="panel">
+    <div class="foreign">
+      <span id="foreignCity" class="tt" style="color: white">国外城市</span>
+      <ul class="cityList">
+        <li><a href="./city/1.html">瑞士-因特拉肯</a></li>
+        <li><a href="./city/17.html">瑞士-苏黎世</a></li>
+        <li><a href="./city/18.html">瑞士-劳特布龙嫩</a></li>
+        <li><a href="./city/2.html">美国-拉斯维加斯</a></li>
+        <li><a href="./city/13.html">美国-纽约</a></li>
+        <li><a href="./city/3.html">意大利-威尼斯</a></li>
+        <li><a href="./city/11.html">意大利-古罗马广场</a></li>
+        <li><a href="./city/4.html">法国-巴黎</a></li>
+        <li><a href="./city/16.html">法国-滨海自由城</a></li>
+        <li><a href="./city/9.html">法国-尼斯</a></li>
+        <li><a href="./city/5.html">捷克-布拉格</a></li>
+        <li><a href="./city/6.html">新加坡</a></li>
+        <li><a href="./city/7.html">德国-柏林</a></li>
+        <li><a href="./city/8.html">匈牙利-布达佩斯</a></li>
+      </ul>
+      <div style="margin-left: 280px;">
+        <ul class="cityList">
+          <li><a href="./city/10.html">冰岛</a></li>
+          <li><a href="./city/12.html">梵蒂冈</a></li>
+          <li><a href="./city/14.html">西班牙-巴塞罗那</a></li>
+          <li><a href="./city/15.html">泰国-普吉岛</a></li>
+          <li><a href="./city/19.html">朝鲜-新义州市</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="domestic">
+      <span id="domesticCity" class="tt" style="color: white">国内城市</span>
+      <ul class="cityList">
+        <li><a href="./city/26.html">北京天安门</a></li>
+        <li><a href="./city/30.html">北京-八达岭长城</a></li>
+        <li><a href="./city/33.html">上海</a></li>
+        <li><a href="./city/25.html">广东-深圳</a></li>
+        <li><a href="./city/34.html">广东-惠州</a></li>
+        <li><a href="./city/35.html">广东-广州</a></li>
+        <li><a href="./city/24.html">浙江-杭州西湖</a></li>
+        <li><a href="./city/32.html">浙江-温州</a></li>
+        <li><a href="./city/36.html">重庆</a></li>
+        <li><a href="./city/21.html">山东-青岛</a></li>
+        <li><a href="./city/31.html">福建-厦门</a></li>
+        <li><a href="./city/38.html">湖北-宜昌三峡大坝</a></li>
+        <li><a href="./city/20.html">吉林-长春</a></li>
+        <li><a href="./city/23.html">辽宁-沈阳</a></li>
+      </ul>
+      <div style="margin-left: 280px;">
+        <ul class="cityList">
+          <li><a href="./city/37.html">西藏-孜珠寺</a></li>
+          <li><a href="./city/22.html">西藏-拉萨</a></li>
+          <li><a href="./city/27.html">香港</a></li>
+          <li><a href="./city/28.html">香港-维多利亚港</a></li>
+          <li><a href="./city/29.html">澳门</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="homeFooter">
+    <div class="homeFooter1">
+      <p id="footerText">
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+</body>
+<!--jQuery-->
+<script src="./js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="./js/mainJs.js"></script>
+<script>
+  //城市列表下滑 
+  $(document).ready(function(){
+    var flag=0;
+    $('#flip').click(function(){
+      if(flag==0){
+        flag=1;
+        $('#panel').slideDown('slow');
+        $('.center-in-center').fadeOut();
+        $('#footerText').fadeOut();
+      }
+      else{
+        flag=0;
+        $('#panel').slideUp('slow');
+        $('.center-in-center').fadeIn();
+        $('#footerText').fadeIn();
+      }
+    });
+  });
+  /*随机到达城市*/
+  $('#begin').click(function(){
+    var x=27;
+    var y=1;//生成1～27的随机数
+    var random=parseInt(Math.random()*(x-y+1)+y);
+    $(location).attr('href','./city/'+random+'.html');
+  })
+</script>
+</html>

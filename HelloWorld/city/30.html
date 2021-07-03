@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>八达岭-长城</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">社会评价</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放 </span>
+    <span class="illustrate">八达岭-长城</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../bdl/welcome1.jpeg" />
+        <img class="welcomeImg" src="../bdl/welcome2.jpeg" />
+        <img class="welcomeImg" src="../bdl/welcome3.jpeg" />
+        <img class="welcomeImg" src="../bdl/welcome4.jpeg" />
+        <img class="welcomeImg" src="../bdl/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">八达岭-长城</h1>
+      <p class="wE">Welcome to Great wall，Badalin</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+     &emsp;&emsp;八达岭长城，位于北京市延庆区军都山关沟古道北口。是中国古代伟大的防御工程万里长城的重要组成部分，是明长城的一个隘口。八达岭长城为居庸关的重要前哨，古称“居庸之险不在关而在八达岭”。
+	   &emsp;&emsp;明长城的八达岭段被称作“玉关天堑”，为明代居庸关八景之一。八达岭长城是明长城向游人开放最早的地段，八达岭景区以八达岭长城为主，兴建了八达岭饭店和由江泽民主席亲笔题名的中国长城博物馆等功能齐全的现代化旅游服务设施。
+	   &emsp;&emsp;八达岭景区是全国文明风景旅游区示范点，以其宏伟的景观、完善的设施和深厚的文化历史内涵而著称于世，是举世闻名的旅游胜地。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../bdl/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+	  &emsp;&emsp;古代修建---一千五百年前的北魏，曾在八达岭一带修筑长城。据《魏书世祖本纪》记载，北魏拓跋氏太平真君七年（446年），在国都平城（今大同）以北，修筑长城，名叫“畿上塞围".<br />
+      &emsp;&emsp;明朝重筑---八达岭长城，建于明朝弘治十八年（1505年），对八达岭长城进行了长达八十余年的修建，共1300多里。<br />
+ 	  &emsp;&emsp;开发利用---953年修复关城和部分城墙后，辟为游览区。经多次整修，可供游览地段达3741米，其中南段1176米、北段2565米，共有敌台16座 。<br/>  
+	  &emsp;&emsp;1961年，国务院确定八达岭关城和城墙为全国重点文物保护单位。1982年被列为国家重点风景名胜区；八达岭作为北京八达岭－十三陵风景名胜区的重要组成部分，被国务院批准列入第一批国家级风景名胜区名单。
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">社会评价</h2>
+      <p>
+       &emsp;&emsp;在到八达岭长城游览的世界各国元首、政府首脑中，有80余位在这里留下了墨宝和评价，其中包括：<br /> 
+	     &emsp;&emsp;“我到过世界许多地方，长城是最美丽的。”——【英】伊丽莎白二世<br /> 
+  	   &emsp;&emsp;“只有一个伟大的民族才能创造出一座伟大的长城。”——【美】尼克松<br /> 
+  	   &emsp;&emsp;“这是世界上最伟大的工程，在其他地方我从未见过类似的杰作。”——【俄】叶利钦<br /> 
+  	   &emsp;&emsp;“一座给人印象深刻而雄伟的建筑，一座中国人民真正值得骄傲的奇迹。”——【安提瓜和巴布达】伯德<br /> 
+  	   &emsp;&emsp;“游览人类最伟大的奇迹——长城，心情是不能用语言表达的，长城是人类和平友谊的纽带”——【阿根廷】费尔南多• 法拉鲁阿<br /> 
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../bdl/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+	&emsp;&emsp;八达岭自古便是重要的军事战略要地，春秋战国时期为防御北方民族的侵扰，在此修筑了长城，至今仍见残墙，墩台遗存，其走向与明长城大体一致。八达岭是峰峦叠嶂的军都山风吹草动的一个山口，明代《长安夜话》说：“路从此分，四通八达，故名八达岭，是关山最高者。”可见八达岭的地理战略地位。<br />
+	&emsp;&emsp;经过八十余年的修建，八达岭长城成为城关相联、墩堡相望、重城护卫、烽火报警的严密防御体系。<br />
+	&emsp;&emsp;历史上八达岭长城是护卫居庸关的门户，从八达岭长城至今天的南口，中间是一条40里长的峡谷，峡谷中建有关城“居庸关”，这条峡谷因此得名“关沟”，而真正扼住关口的是八达岭长城，八达岭高踞关沟北端最高处，这里两峰夹峙，一道中开，居高临下，形势极为险要。古人有“自八达岭下视居庸关，如建领，如窥井”、“居庸之险，不在关城，而在八达岭”之说。可见当时居庸关只是一个关城，真正的长城是修建在八达岭的。八达岭山口的特殊地形，成为历代兵家必争之地，因此，在这里修筑长城具有极重要的战略意义。<br />
+	&emsp;&emsp;八达岭是历史上许多重大事件的见证。第一帝王秦始皇东临碣石后，从八达岭取道大同，再驾返咸阳。肖太后巡幸、元太祖入关、元代皇帝每年两次往返北京和上都之间、明代帝王北伐、李自成攻陷北京、清代天子亲征八达岭都是必经之地。近代史上，慈禧西逃泪洒八达岭、詹天佑在八达岭主持修筑中国自力修建的第一条铁路——京张铁路、孙中山先生登临八达岭长城等，留下了许多历史典故和珍贵的历史回忆，是历史名地 。<br />
+	&emsp;&emsp;八达岭长城是万里长城向游人开放最早的地段。八达岭接待中外游人超一亿三千万次，先后有尼克松、里根、撒切尔、戈尔巴乔夫、伊丽莎白、希思等372位外国首脑和众多的世界风云人物，登上八达岭观光游览。 <br />
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../bdl/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">北京烤鸭</h2>
+          <span>
+		&emsp;&emsp;北京名食，以色泽红艳，肉质细嫩，味道醇厚，肥而不腻为特色，被誉为“天下美味”而驰名中外。冬、春、秋三季吃烤鸭其味最佳，片片有皮带肉，薄而不碎，加以甜面酱加葱段，再配黄瓜条或青萝卜条等，清口解腻，再配上荷叶饼卷起来一起吃。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../bdl/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">北京涮羊肉</h2>
+        <span>
+	    &emsp;&emsp; 涮锅讲究铜锅炭火，汤底澄清，只需加入姜片、葱段等。烧得锅里清汤滚热，拿着筷子夹着红白相间、薄而不散的羊肉片，在汤里一涮，肉色一白就放在冷麻将料里一蘸，入口即化，酱香肉香合二为一，吃到最后，胃里暖热，锅子热腾腾，而手里这酱还是冷的，这才地道。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../bdl/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">风味小吃</h2>
+        <span>
+		&emsp;&emsp;北京的风味小吃有300多种，以回民的清真小吃为主，老北京人常吃的小吃在庙会、花会上都有：焦圈、豌豆黄、豆面糕、炸糕、豆腐脑、茶汤、油炒面、艾窝窝、豆汁、炒肝、炒疙瘩....</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/771920214395719680.xml?v=202106211742042',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

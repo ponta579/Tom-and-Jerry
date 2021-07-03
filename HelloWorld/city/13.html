@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>美国-纽约</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">美国-纽约</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../ny/welcome1.jpeg" />
+        <img class="welcomeImg" src="../ny/welcome2.jpeg" />
+        <img class="welcomeImg" src="../ny/welcome3.jpeg" />
+        <img class="welcomeImg" src="../ny/welcome4.jpeg" />
+        <img class="welcomeImg" src="../ny/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">美国-纽约</h1>
+      <p class="wE">Welcome to NewYork, Amercian</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;纽约是世界的金融经济中心、是美国最大的港口，最大的也是人口最多的城市，同时也是一座全球化的大都市，直接影响着全球的媒体、政治、教育、娱乐以及时尚界。</br>
+      &emsp;&emsp;纽约拥有众多世界级博物馆、画廊和演艺比赛场地；是各大时尚品牌的集中地；有着多元丰富的美食，是体验文化、娱乐、购物、美食之旅的圣地。可逛的景点有纽约自由女神像、帝国大厦、大都会艺术博物馆、中央公园、纽约时代广场等；麦迪逊大道与第五大道两旁的精品店则是游客购物的中心；娱乐则有百老汇音乐剧和林肯中心的高雅艺术。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../ny/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp; 1602年荷兰派遣亨利•哈德逊前往北美洲找寻新乐土，1609年抵达纽约湾。许多荷兰商人对这片拥有丰富资源的土地，并定居于此。1651年爆发英荷之战，1664年英国打败荷兰，取得“新阿姆斯特丹”的领土，命名为“纽约”(New York)，之后纽约迅速发展，随着人口的增多与贸易的发展，逐渐成为商业、金融、贸易、经济中心。<br />
+        &emsp;&emsp;第二次世界大战以后，纽约市成了主导世界的城市，但1950年起，纽约市衰落，只余下工业和商业，70年代期间，犯罪率上涨到危险程度。2001年9月11日，恐怖分子攻击世界贸易中心，几乎有3000人遇害。现在人们正慢慢的从这场灾难中恢复过来，继续为纽约的各种发展努力，构建移民帝国的国际化都市新景象。　　
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;纽约市是美国人口最多的城市，约五分之二的人口出生在国外，外来移民人数众多。纽约人热爱生活，显示出无忧无虑的气质。在911恐怖事件之后，人们陷入悲痛之中。经过时间的治疗，人们正慢慢的从恐怖袭击的阴影中恢复过来，重拾往日紧张而繁华的生活。<br />
+        &emsp;&emsp;纽约作为全世界的金融文化中心，消费水平很高。尤其是住宿的价格，1000人民币/晚的酒店比比皆是。这里有世界上最昂贵的住宅区上东区，有奢侈品云集的第五大道。当然，作为一座国际化都市，这里也不乏实惠的快餐店与划算的青年旅社供游客选择。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../ny/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;纽约拥有充满世界级艺术和历史展品的博物馆，令人目不睱接，在这一点上，没有一座城市能与之相媲美：游客可在博物馆大道（Museum Mile）流连数日。在第五大道的这一段有着富丽堂皇的大都会艺术博物馆、所罗门·R·古根海姆博物馆、惠特尼美国艺术博物馆、新画廊（Neue Galerie）和犹太博物馆；在中央公园西侧，可选择参观美国自然历史博物馆和纽约历史社会博物馆；在市中心，可参观现代艺术博物馆，这无疑是世界上最精美的现代艺术收藏；另一个探索艺术和历史的地方是修道院艺术博物馆 (The Cloisters)，它位于特赖恩帕克堡 (Fort Tryon Park) 的城市绿洲内，属于中世纪艺术收藏。<br />
+      &emsp;&emsp;有许多方式可以体会这座城市极其丰富的文化和多元性：你可以在艾里斯岛移民博物馆的保护建筑内了解移民的故事，他们首先是来到这里的；唐人街是美国最大的华人社区，也是这座城市最古老、真正的商贩云集的街道之一；晚上，繁忙的小意大利诱使着人们品味真正的美味佳肴；该区的中心、迷人的桑树街(Mulberry Street) 两旁尽是餐馆和咖啡屋；前往皇后区——美国民族多元化最明显的社区之一。从一个社区到下一个社区，可分别看到从爱尔兰人、印度人到希腊人、中国人和韩国人的影响。交通非常方便——只需登上有“国际快车”之称的第七号本地地铁列车。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../ny/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">百吉饼</h2>
+          <span>&emsp;&emsp;百吉饼是纽约最流行的面包之一，外表和炸面圈很相似，但炸面圈是油炸的面包，而硬面包圈则是将经过发酵的面粉团，揉成圈形后，放到水里去煮过，然后再进行烘烤。通常把百吉饼从中部切开后分成两片，然后用小的面包片烘烤机烘烤1分钟左右，吃时在上面抹一些黄油、果酱或其他调味品。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../ny/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">热狗</h2>
+        <span>&emsp;&emsp;热狗可谓美国人的“国民小吃”。热狗在还未叫做热狗之前，一直叫法兰克福香肠或熏肉香肠。纽约街头巷尾的各个小贩摊上也总有热狗出售，各个阶层的美国人都很热衷。无论是第五大道、百老汇、中央公园，甚至是华尔街，都有卖热狗的餐车，尤其在下曼哈顿城的商业区一带，经常出现排队人潮。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../ny/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">汉堡</h2>
+        <span>&emsp;&emsp;美国饮食追求快捷方便，汉堡包这种从西欧传来的食物特别受欢迎，两片圆面包中间夹着猪肉、鸡肉或者牛肉，放入番茄片、洋葱、生菜等，抹上黄油、沙拉、芝士等。美式餐厅所供应的汉堡包种类数不胜数，价格也十分亲民，这种两片面包夹肉饼的简单美食受到了美国人的疯狂喜爱。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/771880223745511424.xml?v=202106211742025',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

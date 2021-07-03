@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>新加坡</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">新加坡</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../xjp/welcome1.jpeg" />
+        <img class="welcomeImg" src="../xjp/welcome2.jpeg" />
+        <img class="welcomeImg" src="../xjp/welcome3.jpeg" />
+        <img class="welcomeImg" src="../xjp/welcome4.jpeg" />
+        <img class="welcomeImg" src="../xjp/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">新加坡</h1>
+      <p class="wE">Welcome to Singapore </p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;新加坡(Singapore)地处东南亚，总面积仅有710平方公里，是世界上最小的国家之一，被称为“小红点”。尽管面积不大，新加坡却凭其自由贸易经济，高效劳动力和优越的地理位置，成为亚洲最富有的国家之一。新加坡的交通网络非常发达，前往每个景点都非常方便。城中的博物馆，景点古迹，购物中心和美食距离都非常近，如果你不怕日晒的话，大部分地方都可以步行到达。<br />
+      &emsp;&emsp;新加坡被称为“狮城”源于一个传说。相传，苏门答腊的室利佛逝王国王子出海巡视，突然海上起雾并刮起风暴。王子于随从将船上各种物品丢入海中都无法稳定船只，情急之下王子丢下王冠，风暴奇迹般地突然平息，雾气消散之后此岛出现。登岛之后，看见一头狮子，他认为是好兆头，决定建设这个地方，并给岛屿取名“新加坡拉”(Singapura，梵语中“新加”是狮子的意思，而“坡拉”则意为城市)。<br/> 
+      &emsp;&emsp;新加坡是个非常适宜居住的城市，干净的街道，清新的空气，诱人的美食，精彩的夜生活，它值得你停下匆忙的脚步，花上3天时间，漫无目的地游荡在这座花园城市，好好享受一段属于自己的热带生活。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../xjp/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;新加坡的现代历史起源于1819年英国人莱佛士登陆新加坡，并将其建设成大英帝国的重要港口。1942年日军入侵新加坡，对这座岛屿进行了残酷的统治，杀害了大量华人、马来人和印度人。1945年战争结束之后，英国重新获得了对新加坡的统治。新加坡渴望加入马来西亚联合邦并在1963年和马来西亚一起建立马来西亚联邦，然而最后新加坡因政治理念不符而选择脱离联邦，新加坡在1965年8月9日成为独立的共和国。<br/> 
+        &emsp;&emsp;1959年，李光耀领导的人民行动党赢得了选举，他本人成为新加坡第一任总理。尽管当时新加坡环境恶劣、住房不足、失业率高，但李光耀仍然大胆推行工业化进程。到20世纪90年代，新加坡进入了世界最繁荣的国家之列，与当时的香港、台湾、韩国并称为“亚洲四小龙”。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;新加坡人同许多大都市的人们一样，对陌生游客不太热情，但是大部分新加坡人为人朴实单纯，对人没有心计，而游客应该尊重当地法规，不要在公共场所乱丢垃圾，抽烟。如果要向当地人问路，不要抱太大的期望，因为大部分新加坡人的方向感都不太好，特别当你问中文路名时他们可能也不知道在哪里，所以在问路时尽量使用英文地名或者路名比较好。<br />
+        &emsp;&emsp;新加坡是一个多种族的国家，每个种族的宗族和信仰都不太一样。所以尽量多尊重其他种族的习惯，也不要随意批评其他种族，有可能会触犯新加坡的法律。马来人信奉伊斯兰教，所以在马来餐厅、清真寺，请尊重伊斯兰教的习俗。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../xjp/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;由于人口结构非常多元，所以新加坡的节日有不同国家和民族的特色，比如中国、穆斯林、印度、以及基督教的节日。圣诞节等西方节日在新加坡也广为庆祝。此外，新加坡每年都举办无数的活动。比较出名的有新加坡美食节、新加坡太阳艺术节、F1世界一级方程式锦标赛、新加妆艺大游行、世界美食峰会、新加坡珠宝节等等。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../xjp/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">椰浆饭</h2>
+          <span>&emsp;&emsp;辛香可口的辣椒酱，配上香浓的米饭，摇身变为色香味俱全的招牌椰浆饭美食。将马来语椰浆饭 (nasi lemak) 直接翻译成英语便成了“rich rice”(口味香浓的米饭)。这里的“rich”不是富裕的意思，而是指令其美味绝伦的椰奶。它是一道深受马来人推崇的丰盛美食，非马来人也对它喜爱有加，还推出了他们自己版本的椰浆饭。
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../xjp/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">叻沙</h2>
+        <span>&emsp;&emsp;叻沙有色如火烧夕阳的香辣浓汤，以椰奶和虾米入味，再浇上鲜蚶、虾和炸鱼饼等食材。其特征在于它的米粉：粗粉被切成短条，用勺子勺起即可轻松享用。在一些摊位，吃叻沙时只会给勺子——根本不需要筷子。得益于特许经营和乐于进取的叻沙摊贩对各种风味的借鉴，如此美味的加东叻沙已从新加坡东部传遍了新加坡全国各个角落。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../xjp/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">罗惹</h2>
+        <span>&emsp;&emsp;罗惹是一种混合了蔬菜、水果和油条的本地沙拉，覆有浓稠的黑色酱料，缀以碎花生和芬芳的姜花末提味。酱料是决定罗惹是否美味的关键，其酱汁由虾膏、糖、青柠和辣椒酱混合而成。它必须是一款将甜酸辣味巧妙结合的开胃酱料。人们一般用木勺在大木碗中调制酱料。只有在调制好酱料之后，才添加所有食材混匀。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/799016927639900160.xml?v=202106211742026',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

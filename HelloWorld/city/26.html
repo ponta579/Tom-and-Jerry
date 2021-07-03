@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>中国-北京天安门</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">中国-北京天安门</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../tam/welcome1.jpeg" />
+        <img class="welcomeImg" src="../tam/welcome2.jpeg" />
+        <img class="welcomeImg" src="../tam/welcome3.jpeg" />
+        <img class="welcomeImg" src="../tam/welcome4.jpeg" />
+        <img class="welcomeImg" src="../tam/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">中国-北京天安门</h1>
+      <p class="wE">Welcome to  Tian'anmen Square in Beijing</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;天安门，坐落在中华人民共和国首都北京市的中心、故宫的南端，与天安门广场以及人民英雄纪念碑、毛主席纪念堂、人民大会堂、中国国家博物馆隔长安街相望，占地面积4800平方米，以杰出的建筑艺术和特殊的政治地位为世人所瞩目。天安门是明清两代北京皇城的正门，始建于明朝永乐十五年，最初名“承天门”，寓“承天启运、受命于天”之意。设计者为明代御用建筑匠师蒯祥。清朝顺治八年更名为天安门。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../tam/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;永乐元年，燕王朱棣将北平改称北京，暂称“行在”。就位后把首都从南京迁到北京。 明永乐十五年，征召全国各地能工巧匠，开始大规模重建北京城。其时，江苏省苏州府吴县香山人蒯祥奉命设计建造皇宫，负责设计和组织施工作承天门。明成化元年，由工部尚书白圭主持，由蒯祥设计并领衔重建了承天门。本次重修，也奠定了天安门的形制。李自成率领农民起义军攻占京城再次被毁。次年再次重修承天门。清顺治，清世祖福临下令在原址废墟上大规模改建，并更名为“天安门”，取“受命于天，安邦治国”之意。康熙年间又经过两次大规模的修缮。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;天安门地处首都北京。北京人讲规矩，吃饭怎么坐，茶壶怎么放，筷子怎么摆，怎么作揖、手该放哪，那是有一定数的。北京人喜欢听评书、听戏，赶早的话去胡同里串一串，说不定遇见一两个大爷边锻炼身体边听着京剧呢，偶尔兴致来了还会吼上两嗓子。北京人还喜欢养鸟，不过现在养鸟的都是爷爷辈的了。由于北京独特的文化底蕴、生活环境，所以北京人从小就有一张能说会道的嘴，而北京爷们给人的感觉，就是说话幽默又有点贫，又带点坏坏的痞子气。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../tam/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;天安门城楼除底座是砖混结构外，整个城楼为木结构。60年代重建队伍在天安门最高的脊瓦处数脊瓦数时，意外的发现中间黄色的琉璃脊瓦中藏着一块金丝楠木盒，该琉璃瓦厚60厘米、宽80厘米，工人们砸碎后露出一个30厘米见方的木盒，上面清晰地显露出一对精美的二龙戏珠雕刻图案。工人们用撬棍戳破后，木盒松了。木盒内藏有块拇指大的红宝石、朱砂。此外还有五彩粮：黄豆、高粱、黑豆、谷子和玉米等物品，有的物品已分辨不清，金丝楠木盒里的所有东西后来全部上交国库。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../tam/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">北京烤鸭</h2>
+          <span>&emsp;&emsp;北京烤鸭是具有世界声誉的北京著名菜式，起源于中国南北朝时期，《食珍录》中已记有炙鸭，在当时是宫廷食品。用料为优质肉食鸭北京鸭，果木炭火烤制，色泽红润，肉质肥而不腻，外脆里嫩。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../tam/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">驴打滚</h2>
+        <span>&emsp;&emsp;驴打滚是老北京传统小吃之一，成品黄、白、红三色分明煞是好看。因其最后制作工序中撒上的黄豆面，犹如老北京郊外野驴撒欢打滚时扬起的阵阵黄土，因此而得名“驴打滚”。它的原料是用黄米面加水蒸熟，和面时稍多加水和软些。另将黄豆炒熟后，轧成粉面。制作时将蒸熟的黄米面外沾上黄豆粉面擀成皮，抹上赤豆沙馅卷起来，切成小块，撒上白糖即可。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../tam/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">糖火烧</h2>
+        <span>&emsp;&emsp;糖火烧是满族传统小吃，因其制作时用缸作成炉子，将烧饼生坯直接贴在缸壁上烤熟而得名。北京人常吃的早点之一，已有300多年历史，原为通州小吃，后传入北京，成为北京小吃。糖火烧香甜味厚，绵软不粘，适合老年人食用。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/835979589917347840.xml?v=202106211742044',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

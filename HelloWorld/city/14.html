@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>西班牙-巴塞罗那</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">西班牙-巴塞罗那</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../bsln/welcome1.jpeg" />
+        <img class="welcomeImg" src="../bsln/welcome2.jpeg" />
+        <img class="welcomeImg" src="../bsln/welcome3.jpeg" />
+        <img class="welcomeImg" src="../bsln/welcome4.jpeg" />
+        <img class="welcomeImg" src="../bsln/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">西班牙-巴塞罗那</h1>
+      <p class="wE">Welcome to Barcelona，Spain</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;巴塞罗那(Barcelona)是西班牙第二大城市，位于西班牙的东北部，是加泰罗尼亚自治区(Catalunya) 首府，有“欧洲之花”的美誉，其官方语言是西班牙语，但是本地的加泰罗尼亚语则在整个地区通用。1992年，巴塞罗那主办了第25届奥运会，更使其名扬四海，让更多的人认识了巴塞罗那。<br />
+      &emsp;&emsp;人们往往将她和三个关键词相连：度假、建筑、体育。爱度假的游客爱这里宜人的地中海气候、绵延的海滩、灿烂的阳光；建筑爱好者称之为天堂，高迪的惊世之作赋予了她这样独特的魅力；球迷更是爱她的动感、狂野、激情澎湃，为之痴迷。她就是利比里亚半岛的明珠，一个让人到了就不想走的城市。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../bsln/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;公元前201年，罗马人在此建立了港口促成巴塞罗那的快速发展。8世纪时，来自非洲的摩尔人成为此地的统治者，直到12世纪，摩尔人把巴塞罗那营建成地中海地区最大的港口。巴塞罗那真正开始活跃，是在西元9世纪查尔曼国王的时代。这个由不同国家组成的国家首先独立，并且随着加泰罗尼亚自治区及阿拉贡自治区的结合而成，一个以巴塞罗那为首都的王国诞生了。<br />
+        &emsp;&emsp;摩尔人之後，巴塞罗那终于首次拥有了繁荣的经济、安定的政治，这使巴塞罗那在14、15世纪达到有史以来最巅峰的状态。15世纪末，加泰罗尼亚自治区及阿拉贡自治区合并成卡斯提亚王国。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;巴塞罗那老城区的外延区是人口密度最大的地区，62%的巴塞罗那居民来自加泰罗尼亚大区，23.5%来自西班牙的其余地区，13.9%从其余国家移民至此，最大的移民来源国为厄瓜多尔、秘鲁、摩洛哥、哥伦比亚、阿根廷、意大利、巴基斯坦、中国和韩国。<br />
+        &emsp;&emsp;巴塞罗那居民中95%的可以听懂本地语言加泰罗尼亚语。绝大部分本地居民信奉天主教，同时有其他宗教信仰流行，如福音教派、耶和华见证人教派、佛教和伊斯兰教。<br />
+        &emsp;&emsp;西班牙人大多白天悠哉，太阳晒到懒，到了晚上又瞬间精力充沛地去通宵派对。到了周末，巴塞罗那大部分人的生物钟是日上三竿才起床，深夜开始娱乐，大清早才就寝。周末大多数商店通常只开周六半天，星期天全天关门休息。在这个欧洲最著名的聚会城市里，酒吧、夜店通宵营业，灯红酒绿是这座城市夜晚的真实写照。<br />
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../bsln/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;安东尼·高迪，胡安·米罗，萨尔瓦多·达利，这些艺术节的领袖们足以代表巴塞罗那的文化，而在这座艺术之城，文化与艺术在街头巷尾，平常百姓人家都能看到的，而且似乎每家每户都有自己的特色，而又不与巴塞罗那的整个城市风格相冲突。<br />
+      &emsp;&emsp;在这个地中海懒人国，请记得放慢脚步，围观下街头艺人，倾听下游荡在大街小巷的琴音歌声，那些色彩缤纷的涂鸦也可能是某家的名品呢。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../bsln/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">塔帕</h2>
+          <span>&emsp;&emsp;很难想象这道只能作为消遣的小餐点占据了西班牙饮食历史上那么重要的一个位置。作为西班牙的饮食国粹，几乎所有食物都能够用来制作一道美味的塔帕。塔帕清一色都是咸的，分为凉食和热食两种。凉食主要是面包夹馅，各种馅料酱汁填入其中；热食就更丰富了，主要是油炸的海鲜以及肉类，都是分量小小的餐前美味。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../bsln/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">西班牙海鲜饭</h2>
+        <span>&emsp;&emsp;由于巴塞罗那取之不尽的海鲜资源，使得这里的海鲜饭味道十分正宗，用料也十分新鲜。西班牙海鲜饭是巴塞罗那的骄傲，种类繁多，颜色也是红黄黑白十分鲜艳，最有代表性的是什锦海鲜饭，海鲜使用的种类最多，用料最足。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../bsln/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">墨鱼饭</h2>
+        <span>&emsp;&emsp;这样一个看起来像是黑暗料理的东西，是用墨鱼的墨汁和米一起炖煮的巴伦西亚和加泰罗尼亚特色的美食，但其实它算是西班牙海鲜饭的意外暗黑版本。据说是数百年前西班牙的无敌舰队在征战中南美洲时，做海鲜饭的藏红花用完了，又一时无法购买，炊事员干脆把原本准备扔掉的墨鱼汁来替代藏红花。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/807771620742533120.xml?v=202106211742028',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>中国-杭州西湖</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">中国-杭州西湖</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../xh/welcome1.jpeg" />
+        <img class="welcomeImg" src="../xh/welcome2.jpeg" />
+        <img class="welcomeImg" src="../xh/welcome3.jpeg" />
+        <img class="welcomeImg" src="../xh/welcome4.jpeg" />
+        <img class="welcomeImg" src="../xh/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">中国-杭州西湖</h1>
+      <p class="wE">Welcome to The West Lake in Hangzhou</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;西湖，位于浙江省杭州市西湖区龙井路1号，杭州市区西部，景区总面积49平方千米，汇水面积为21.22平方千米，湖面面积为6.38平方千米。西湖南、西、北三面环山，湖中白堤、苏堤、杨公堤、赵公堤将湖面分割成若干水面。湖泊天然地表水源是金沙涧、龙泓涧、赤山涧（慧因涧）、长桥溪四条溪流。西湖地处中国东南丘陵边缘和中亚热带北缘。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../xh/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;元代，苏堤以西湖面尽为桑田；苏堤六桥之下，水流如线。明初，西湖渐成平田，水塞不通。民国元年，浙江军政府政事部主持拆除钱塘门至涌金门城墙和旗营城垣，辟新市场，沿湖筑湖滨路，离湖20米处设栏，内杂莳花木，称湖滨公园。民国十九年春，杭州市政府在长生路之北至钱塘门头，用浚湖之泥填为平地，约21亩余，辟为第六公园。2002年开始，杭州实行环湖公园景点免费开放。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;南宋时杭州是都城，集中了一批山水画家，留下了众多名作。由于吴越国及各时期对佛教尊崇，西湖周边群山中多有飞来峰石刻群、烟霞洞造像、慈云岭造像和天龙寺造像等庙宇古刹和佛像石刻。中国美术学院诞生于西湖湖畔，画家如丰子恺、潘天寿、黄宾虹、刘海粟、林风眠、陆俨少、赵无极等在西湖边长期生活作画。西湖以其湖光山色和人文底蕴，吸引了历代文人墨客的眷顾，在文学方面留下了《武林掌故丛编》《西湖梦寻》《西湖集览》与新旧《西湖志》、《湖山便览》等记载了大量关于西湖和古代杭州的史迹掌故。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../xh/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;西湖自古以来便流传着《白蛇传》《梁山伯与祝英台》《苏小小》等民间传说和神话故事。白蛇传中的“断桥相会”、“白娘子被压雷峰塔”等情节与西湖十景有着联系。相传天上的玉龙和金凤在银河边的仙岛上找到了一块白玉，他们一起琢磨了许多年，白玉就变成了一颗璀璨的明珠，这颗宝珠的珠光照到哪里，哪里的树木就常青，百花就盛开。但是后来这颗宝珠被王母娘娘发现了，王母娘娘就派天兵天将把宝珠抢走，玉龙和金凤赶去索珠，王母不肯，于是就发生了争抢，王母的手一松，明珠就降落到人间，变成了波光粼粼的西湖，玉龙和金凤也随之下凡，变成了玉龙山和凤凰山。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../xh/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">定胜糕</h2>
+          <span>&emsp;&emsp;定胜糕是杭州的传统小吃之一。定胜糕是南宋时百姓为韩家军出征鼓舞将士而特制的，糕上有“定胜”两字，后就被称“定胜糕”。另一个传说是南宋定都杭州后，岳飞为保护国土多次领军出征，杭州百姓沿途都会送上定胜糕，盼胜利归来，这便是岳飞与定胜糕的真实故事，流传千年；南宋文献《梦粱录》亦有相关记载。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../xh/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">龙井虾仁</h2>
+        <span>&emsp;&emsp;龙井虾仁是一道特色名菜，这是用杭州特产的西湖龙井嫩芽作为配菜，以虾仁为主制作而成的一道美食。龙井素以“色绿、香郁、味甘、形美”四绝著称。河虾被古人誉为“馔品所珍”。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../xh/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">西湖醋鱼</h2>
+        <span>&emsp;&emsp;西湖醋鱼是一道历史悠久的名菜，它的历史可以追溯到宋朝，西湖醋鱼也称为叔嫂传珍。西湖醋鱼通常选用草鱼作原料，烹制而成。烧好后，浇上一层平滑油亮的糖醋，胸鳍竖起，鱼肉嫩美，带有蟹味，鲜嫩酸甜。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/847298353845768192.xml?v=202106211742039',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

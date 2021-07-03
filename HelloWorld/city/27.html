@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>中国-香港</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">中国-香港</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../xg/welcome1.jpeg" />
+        <img class="welcomeImg" src="../xg/welcome2.jpeg" />
+        <img class="welcomeImg" src="../xg/welcome3.jpeg" />
+        <img class="welcomeImg" src="../xg/welcome4.jpeg" />
+        <img class="welcomeImg" src="../xg/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">中国-香港</h1>
+      <p class="wE">Welcome to Hong Kong, China</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;香港（Hong Kong），简称“港”，全称中华人民共和国香港特别行政区，位于中国南部、珠江口以东，西与澳门隔海相望，北与深圳市相邻，南临珠海市万山群岛，区域范围包括香港岛、九龙、新界和周围262个岛屿，陆地总面积1106.66平方公里，海域面积1648.69平方公里。截至2020年，总人口747万余人，是世界上人口密度最高的地区之一，人均寿命全球第一，人类发展指数全球第四。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../xg/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;香港自古以来就是中国的领土，1842-1997年间曾受英国殖民统治。二战以后，香港经济和社会迅速发展，不仅跻身“亚洲四小龙”行列，更成为全球最富裕、经济最发达和生活水准最高的地区之一。1997年7月1日，中国政府对香港恢复行使主权，香港特别行政区成立。中央政府对香港拥有全面管治权，香港保持原有的资本主义制度长期不变，并享受外交及国防以外所有事务的高度自治权，以“中国香港”的名义参加众多国际组织和国际会议。“一国两制”、“港人治港”、高度自治是中国政府的基本国策。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;香港是一座高度繁荣的自由港和国际大都市，与纽约、伦敦并称为“纽伦港”，是全球第三大金融中心，重要的国际金融、贸易、航运中心和国际创新科技中心，也是全球最自由经济体和最具竞争力城市之一，在世界享有极高声誉，被评为世界一线城市第三位。香港是中西方文化交融之地，把华人智慧与西方社会制度的优势合二为一，以廉洁的政府、良好的治安、自由的经济体系及完善的法治闻名于世，有东方之珠、美食天堂和购物天堂等美誉。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../xg/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;香港文化荟萃，其名字的由来主要有两种说法：说法一：香港的得名与香料有关。宋元时期，香港在行政上隶属广东东莞。从明朝开始，香港岛南部的一个小港湾，为转运南粤香料的集散港，因转运产在广东东莞的香料而出了名，被人们称为“香港”。说法二：香港是一个天然的港湾，附近有溪水甘香可口，海上往来的水手，经常到这里来取水饮用，久而久之，甘香的溪水出了名，这条小溪，也就被称为“香江”，而香江入海冲积成的小港湾，也就开始被称为“香港”。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../xg/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">咕噜肉</h2>
+          <span>&emsp;&emsp;咕噜肉又名古老肉，是一道广东的传统特色名菜。此菜始于清代。广东厨师即以出骨的精肉加调味与淀粉拌和制成一只只大肉圆，入油锅炸，至酥脆，粘上糖醋卤汁，其味酸甜可口，受到中外宾客的欢迎。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../xg/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">虾饺</h2>
+        <span>&emsp;&emsp;虾饺是香港餐厅里最具代表性的点心之一。虾饺始创于20世纪初广州市郊伍村五凤乡的一间家庭式小茶楼，已经有百年历史。传统的虾饺是半月形、蜘蛛肚共有十二褶的，馅料有虾，有肉，有笋，味道鲜美爽滑，美味可口。虾饺虽然价格昂贵，但一直是人们点得最多的菜。每个蒸笼里通常有三到四个蒸饺。每个虾饺半透明的薄皮里包着一两只虾和一点猪肉。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../xg/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">鱼丸</h2>
+        <span>&emsp;&emsp;鱼丸是经典的香港小吃，用鱼肉制成，可以被分为两种。 一种是街边小贩卖的著名熟食。这种鱼丸的历史可以被追溯到20世纪50年代。这种鱼丸由炸鱼肉制成。路边摊通常将鱼丸配着辣酱或甜酱出售。 </span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/771890347381886976.xml?v=202106211742032',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

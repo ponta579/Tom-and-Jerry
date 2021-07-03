@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>冰岛</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">冰岛</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../bd/welcome1.jpeg" />
+        <img class="welcomeImg" src="../bd/welcome2.jpeg" />
+        <img class="welcomeImg" src="../bd/welcome3.jpeg" />
+        <img class="welcomeImg" src="../bd/welcome4.jpeg" />
+        <img class="welcomeImg" src="../bd/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">冰岛</h1>
+      <p class="wE">Welcome to Iceland</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;冰岛(Iceland)是一座遍布壮观的火山、冰原、瀑布、温泉与湖泊的国家。以雷克雅未克为中心，你可以去附近的蓝湖和黄金三角，如果时间足够，最好自驾环岛一周，可以看到与欧洲大陆截然不同的神奇景色。</br>
+      &emsp;&emsp;冰岛位于北大西洋中部，靠近北极圈，为欧洲第二大岛。海岸线长约4970公里。属寒温带海洋性气候，变化无常。因受墨西哥湾暖流影响，较同纬度其他地方温和。夏季日照长，冬季日照极短。秋季和冬初可见极光。多火山和地热喷泉。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../bd/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;世纪末，爱尔兰修道士首先移居冰岛。9世纪后半叶，挪威开始向冰岛移民。930年建立议会和冰岛联邦。1262年臣属于挪。1380年冰、挪同归丹麦统治。1904年获内部自治。1918年冰丹签订联邦法，规定冰为主权国家，但外交事务仍由丹控制。1940年丹麦被德国占领，冰丹关系中断。同年英军进驻，次年美军取代英军驻冰。1944年6月16日冰议会正式宣布解散冰丹联盟，17日成立冰岛共和国。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;冰岛是世界上和平指数最高的国家、最尊重女性权利的国家、人均出版书籍比例最高的国家，经济危机前还是世界上幸福指数最高的国家，现在也不差，世界第四并逐步回升。<br />
+        &emsp;&emsp;四面环海、广阔的草地，冰岛美食再次证明了冰岛人与自然的亲密关系，鱼类、羊肉、奶制品都是冰岛人餐桌上的常客。寒冷的气候并没有阻止冰岛人发挥他们的农业想象力，最大化利用丰富的地热资源，冰岛人建立起一个个温室，种植西红柿、黄瓜，甚至咖啡豆和香蕉，在北极圈的纬度收获赤道果实。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../bd/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;萨迦(saga)，这种特有于冰岛及北欧地区的文学形式，是冰岛文化的瑰宝。创作于13、14世纪左右，冰岛的萨迦文学主要纪录了9世纪中叶到11世纪时期的冰岛英雄传奇，反映了冰岛的早期历史及社会形态。每个冰岛人都从小学习、传诵萨迦故事，这笔文化遗产贯穿了冰岛10多个世纪的发展，是冰岛文化的精髓。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../bd/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">龙虾汤</h2>
+          <span>&emsp;&emsp;龙虾汤是冰岛最负盛名的地方风味之一。虽然这道菜并非冰岛独创，但其味道却在众多龙虾浓汤中独树一帜。单看明亮的橙黄色浓汤，你的食欲就会被立刻激起；而层次丰富、有点类似泰式酸辣汤的味道，则更加让你食欲大开。汤里通常还会有四五块龙虾肉，入口即化的口感一定会让你难忘。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../bd/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">羊肉汤</h2>
+        <span>&emsp;&emsp;羊肉汤大概是最受中国人追捧的冰岛美食了。将冰岛当地的羊肉与土豆、胡萝卜等蔬菜一起炖煮，羊肉鲜美、汤汁清甜。一碗热乎的羊汤下肚，整个身子都暖洋洋的，仿佛将冰岛冰天雪地的寒冷都隔绝在外了。很多当地餐馆都可品尝这道美味，价格在2000冰岛克朗左右。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../bd/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">海鹦肉</h2>
+        <span>&emsp;&emsp;黑白相间、小巧可爱的海鹦是冰岛的国鸟。这些小可爱除了绒毛被收集做衣服之外，也成为了冰岛人的日常美食之一。海鹦肉通常的做法是用牛奶煮或者烟熏，尝起来像牛肝一样。全冰岛你都可能吃到这道食物，而在海鹦的聚集地——韦斯特曼群岛上尤为多。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/799012875258564608.xml?v=202106211742027',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>中国-青岛</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">中国-青岛</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../qd/welcome1.jpeg" />
+        <img class="welcomeImg" src="../qd/welcome2.jpeg" />
+        <img class="welcomeImg" src="../qd/welcome3.jpeg" />
+        <img class="welcomeImg" src="../qd/welcome4.jpeg" />
+        <img class="welcomeImg" src="../qd/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">中国-青岛</h1>
+      <p class="wE">Welcome to Qingdao, China</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;青岛，别称岛城、琴岛、胶澳，是中国山东省副省级市、计划单列市 ,是国务院批复确定的中国沿海重要中心城市和滨海度假旅游城市、也是国际性港口城市 。截至2019年，全市下辖7个区、代管3个县级市，总面积11293平方千米，2019年，建成区面积758.16平方千米 。</br>
+      &emsp;&emsp;青岛地处中国华东地区、山东半岛东南、东濒黄海，是山东省经济中心、国家重要的现代海洋产业发展先行区、东北亚国际航运枢纽、海上体育运动基地,一带一路新亚欧大陆桥经济走廊主要节点城市和海上合作战略支点。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../qd/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;青岛市市名以古代渔村青岛得名。青岛市专名“青岛”本指城区前海一海湾内的一座小岛，因岛上绿树成荫，终年郁郁葱葱而得名“青岛”，后于明嘉靖年间首度被记载于王士性的《广志绎》中。明万历七年（1579年），即墨县令许铤主持修编的《地方事宜议·海防》中，有关青岛之名记述为：“本县东南滨海，即中国东界，望之了无津涯，惟岛屿罗峙其间。岛之可人居者，曰青、曰福、曰管……”这里的“青”，即指青岛。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;2020年，全市居民人均可支配收入47156元，增长3.7%。按常住地分，城镇居民人均可支配收入55905元，增长2.6%；农村居民人均可支配收入23656元，增长4.8%。全市居民人均消费支出30294元，增长2.7%，恩格尔系数为28.1%。按常住地分，城镇居民人均消费支出35936元，增长1.9%；农村居民人均消费支出15138元，增长1.6%。据抽样调查，年末城镇居民人均现住房建筑面积33.4平方米，农村居民人均现住房建筑面积38.0平方米。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../qd/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;青岛是国家历史文化名城、中国道教发祥地。因树木繁多，四季常青而得名。1891年清政府驻兵建制，青岛是2008北京奥运会和第13届残奥会帆船比赛举办城市，是中国帆船之都，亚洲最佳航海城，世界啤酒之城、联合国“电影之都”、全国首批沿海开放城市、全国文明城市、中国最具幸福感城市。被誉为“东方瑞士”、中国品牌之都。2020年9月2日，被交通运输部评为国家公交都市建设示范城市。
+青岛是国际海洋科研教育中心，驻有山东大学、北京航空航天大学青岛校区、中国海洋大学等高校26所，引进清华大学、北京大学等29所高校。青岛的异域建筑种类繁多，被称作“万国建筑博览会”。八大关建筑群荣膺“中国最美城区”称号。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../qd/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">青岛啤酒</h2>
+          <span>&emsp;&emsp;提到瑞士传统美食，第一个应该了解的就是奶酪火锅，它算得上是这个国家的经典美食。瑞士的火锅锅底采用了融化的奶酪，用当地的面包蘸上融化的奶酪一起食用，再配上白葡萄酒、杜松子酒或是红茶化解奶酪的稠腻感，将奶酪的奶香释放出来，绝对算得上是一顿美味佳肴了。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../qd/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">崂山绿茶</h2>
+        <span>&emsp;&emsp;崂山绿茶是山东省青岛市崂山区王哥庄、沙子口、中韩、北宅等4个街道办事处现辖行政区域选择适宜的茶树品种，用特有的工艺加工制成的绿茶。1959年“南茶北引”获得成功，形成了品质独特“叶片厚、豌豆香、滋味浓、耐冲泡”等特征。按鲜叶采摘季节分为春茶、夏茶、秋茶；按鲜叶原料和加工工艺，分为卷曲形绿茶和扁形绿茶。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../qd/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">红岛蛤蜊</h2>
+        <span>&emsp;&emsp;红岛蛤蜊产自山东青岛红岛经济区。尽管在全世界范围的滩涂上，蛤蜊并非罕见的贝类海产品，但胶州湾是大自然赐予青岛的优良海湾，水质、水流和水量以及海滩所含的有机物质极其适合蛤蜊繁殖生长，可谓得天独厚。于是，吃蛤蜊、喝啤酒、洗海澡一起成为这座城市的文化符号。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/835965405934653440.xml?v=202106211742036',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

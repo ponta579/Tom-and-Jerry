@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>意大利-古罗马广场</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">意大利-古罗马广场</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../glmgc/welcome1.jpeg" />
+        <img class="welcomeImg" src="../glmgc/welcome2.jpeg" />
+        <img class="welcomeImg" src="../glmgc/welcome3.jpeg" />
+        <img class="welcomeImg" src="../glmgc/welcome4.jpeg" />
+        <img class="welcomeImg" src="../glmgc/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">意大利-古罗马广场</h1>
+      <p class="wE">Welcome to the Roman Forum, Italy</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;古罗马遗址位于意大利罗马帕拉蒂尼山与卡比托利欧山之间，它是古罗马时代的城市中心，包括一些罗马最古老与最重要的建筑。古罗马城市一般都有广场，开始是作为市场和公众集会场所，后来也用于发布公告，进行审判，欢度节庆，甚至举行角斗。广场多为长方形。在自发形成的城市中，广场的位置因城而异；在按规划建造的营寨城市中，大多位于城中心交叉路口。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../glmgc/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;凯撒大帝决定要用他的名建一个广场。当时广场还没完工，而是到了奥古斯都的领导下才正式完工。同时加入一个配合性的纪念广场，即奥古斯都广场。新的建筑和凯撒广场成为直角。战神殿有很高的墙，至今还是在苏布拉平民区鹤立鸡群。这方形的广场有又深又长的门廊，还有个平台伸展成半圆形的祭坛。罗马皇帝图密善决定要把所有以前在这区的广场用个新的广场连结起来。这新的广场位于本来留下来的不规则空地上，介于和平殿，凯撒广场及奥古斯都广场中间。由于图密善的去世，这个广场被他的继承者涅尔瓦以自己的名字命名而创建
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;古罗马广场（Roman Forum）是古罗马时代的城市中心，其中还残留了些许的古罗马时期的重要建筑的废墟。屹立在此地的建筑物有提图斯凯旋门、奥古斯都凯旋门、塞维鲁凯旋门、凯撒神庙、灶神庙，维纳斯和罗马神庙。古罗马政治、宗教、商业、娱乐等建筑的聚集地又可以被称为“古罗马废墟”。</br>
+        &emsp;&emsp;  罗马市政府刻意保留了这块残垣断壁，为全人类留下了珍贵的文化遗产，这片古罗马废墟犹如大露天博物馆不仅吸引着全世界慕名而来的游客一探究竟，还吸引着众多考古工作者和历史学家前来探寻古罗马当时的生活百态，很具有考古价值。这片废墟其实最早是被破砖乱瓦覆盖，到十九世纪才被重见天日，古代劳动人民为我们留下了一片难得的建筑遗迹，让人联想到昔日的繁荣富裕的生活。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../glmgc/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;古罗马广场是公元前6世纪时开始建设,至西罗马帝国灭亡为止。广场上集中了大量宗教性和纪念性建筑物。广场的主要部分约长134米,宽63米。南北两侧各有一座巴西利卡（长方形会堂），供审判和集会用。广场东端是凯撒庙和奥古斯都凯旋门，西端是检阅台和另一座凯旋门。广场西北角的元老院和门前的集议场形成政治中心；凯撒庙和奥古斯都凯旋门以东的灶神庙和祭司长府是宗教中心。公元 4世纪建造君士坦丁巴西利卡之后，广场向东扩展，建造了第度凯旋门。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../glmgc/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">提拉米苏</h2>
+          <span>&emsp;&emsp;提拉米苏以马斯卡彭芝士作为主要材料，再以手指饼干取代传统甜点的海绵蛋糕，加入咖啡、可可粉等其他材料。吃到嘴里香、滑、甜、腻、柔和中带有质感的变化，味道并不是一味的甜。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../glmgc/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">鱼类小吃</h2>
+        <span>&emsp;&emsp;虽然在英国各地享用油炸鳕鱼片和薯片作为正餐是很常见的，但是罗马人喜欢将鱼酱（盐鳕鱼）包裹起来像鱼锥一样，并在行走中吃它。Filetti di Baccala主要供应脆脆的鱼类零食，是该市的黄金标准之一。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../glmgc/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">披萨和塔格罗</h2>
+        <span>&emsp;&emsp;在罗马，披萨或切片披萨，是正方形或长方形，并切成所需的量（圆形比萨饼往往由馅饼出售）。披萨咖啡点和面食一样普遍，但其中一些最好的来自Pizzarium Bonci，距离Prati的梵蒂冈约有10分钟的步行路程。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/885000701330067456.xml?v=202106211742022',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

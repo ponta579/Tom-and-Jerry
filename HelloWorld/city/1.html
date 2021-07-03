@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>瑞士-因特拉肯</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">瑞士-因特拉肯</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../rs/welcome1.jpeg" />
+        <img class="welcomeImg" src="../rs/welcome2.jpeg" />
+        <img class="welcomeImg" src="../rs/welcome3.jpeg" />
+        <img class="welcomeImg" src="../rs/welcome4.jpeg" />
+        <img class="welcomeImg" src="../rs/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">瑞士-因特拉肯</h1>
+      <p class="wE">Welcome to Interlaken，Switzerland</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;因特拉肯（lnterlargen）距伯尔尼南部36英里(1英里=1.6093公里）被认为是瑞士最适合观光的地方。<br />
+      &emsp;&emsp;因特拉肯兴起于中世纪，源自拉丁文interlacus,意为在两个湖泊之间。海拔1870英尺，位于图恩湖（LakeThun）及布里恩茨湖（LakeBrienz）之间的低地地区。面积4.4万平方公里，人口近6000。有着特殊地理位置，它周围有许多伯尔尼阿尔卑斯地区的名胜，是伯尔尼地区的门户。附近有下塞恩、维尔德斯维尔、马腾三小镇。静谧秀美的小镇与温婉美丽的少女峰浑然一体，美得令人窒息。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../rs/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;因特拉肯是瑞士最古老及最受欢迎的旅游胜地之一，旅游业是其目前最重要的收入来源。<br />
+        &emsp;&emsp;因特拉肯修道院于1133年建于阿勒河左岸，通过收取过桥费维持收入。因特拉肯市因该修道院而得名。13世纪，修道院的影响力扩大至周围地区及阿勒河谷，成为这一地区最大的宗教活动场所。然而，1350年，一连串危机和冲突导致了修道院的衰败。宗教改革之后，修道院的部分建筑作为地区的行政大楼使用，其他部分则成为当地医院。1746年，修道院的西翼遭到损坏，当时的统治者在其基础上建造了新城堡，并从那时开始作为因特拉肯地区的行政中心沿用至今。1800年开始，因特拉肯就因其美丽的自然风光、便捷的交通设施和酒店服务成为世界闻名的旅游胜地。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;瑞士居民主要信仰天主教和基督教，其中天主教徒约占信教人口总数的44.1%，基督教徒占36.6%。另，伊斯兰教徒约占4.5%， 其他3.1%，无宗教者占11.7%。<br />
+        &emsp;&emsp;高耸的阿尔卑斯山，以神秘感著称的湖泊，清冽的水和清新的空气，构成了这片美丽的土地。瑞士拥有很悠久的中立国历史传统，自从1815年以后从未卷入过战争；同时许多国际性组织的总部都设在瑞士，如，红十字国际委员会、世界贸易组织以及联合国在欧洲的两个办事处之一。但瑞士并不是欧盟成员国。瑞士也是全球最富裕、经济最发达和生活水准最高的国家之一，按照人均国民生产总值，是世界最富裕的国家之一。有世界公园的美誉。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../rs/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;瑞士文化受到其地理位置和多语言性的影响，在文学、艺术、建筑、音乐、宗教及习俗等各个方面表现出多样性。瑞士山区的文化与平原的不同，不同的语言地区的文化差异显著，主要罗马天主教和新教地区之间也存在文化差别。<br />
+      &emsp;&emsp;瑞士在宗教改革运动中曾是著名的新教“加尔文教”的主要传播中心。其理论创立者加尔文也曾在瑞士待过。
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../rs/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">奶酪火锅</h2>
+          <span>&emsp;&emsp;提到瑞士传统美食，第一个应该了解的就是奶酪火锅，它算得上是这个国家的经典美食。瑞士的火锅锅底采用了融化的奶酪，用当地的面包蘸上融化的奶酪一起食用，再配上白葡萄酒、杜松子酒或是红茶化解奶酪的稠腻感，将奶酪的奶香释放出来，绝对算得上是一顿美味佳肴了。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../rs/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">拉科雷特芝士</h2>
+        <span>&emsp;&emsp;在瑞士最冷的月份，瑞士马路上总会飘荡着烧焦的松木味，而到了山坡里，则会有辛辣的拉可雷特芝士的香味来迎接你。这道菜和奶酪火锅并称瑞士“国菜”。在瓦莱州，瑞士人会把当地的拉可雷特芝士放在火堆上慢慢烤，再把融化的芝士淋在切好的土豆、腌菜和洋葱上。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../rs/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">瑞士巧克力</h2>
+        <span>&emsp;&emsp;瑞士的巧克力的种类丰富，价格适中，最适合作为礼物。牛奶巧克力是在瑞士发明的。因为调节牛奶的温度非常困难，虽然欧洲各地都对之进行了大量的研究，但一直没有成功，后来，瑞士人达尼尔·彼德于1875年发明了制作方法。现在瑞士的巧克力种类繁多，味道也是各种各样。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/810306227421581312.xml?v=202106211742029',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

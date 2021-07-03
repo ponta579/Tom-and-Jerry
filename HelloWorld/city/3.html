@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>意大利-威尼斯</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">意大利-威尼斯</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../wns/welcome1.jpeg" />
+        <img class="welcomeImg" src="../wns/welcome2.jpeg" />
+        <img class="welcomeImg" src="../wns/welcome3.jpeg" />
+        <img class="welcomeImg" src="../wns/welcome4.jpeg" />
+        <img class="welcomeImg" src="../wns/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">意大利-威尼斯</h1>
+      <p class="wE">Welcome to Venice, Italy</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;威尼斯，文艺复兴时期的重镇之一，一座建立在水上的城市。由118个小岛组成，并以177条水道、401座桥梁连成一体。威尼斯有“水上都市”、“百岛城”、“桥城”之称。这里有世界上最美的广场之一“圣马可广场”，有美丽的大运河，浴火重生的凤凰歌剧院，徐志摩笔下忧伤的叹息桥，美得令人窒息的回廊，这里是威尼斯画派的发源地，还是多部电影片段的拍摄地，音乐大师理查德·瓦格纳在这里与世长辞，她独特的无与伦比的气质让每一个到访的人都如痴如醉，不舍离去。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../wns/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;相传威尼斯的建造于公元453年。当时这个地方的农民和渔民为逃避游牧民族的杀掠，转而避往亚德里亚海中的这个小岛。他们合理利用肥沃的冲积土质，就地取材。在淤泥中、在水上，人们建起了威尼斯。<br/>
+        &emsp;&emsp;14世纪前后，威尼斯已经发展成为意大利最繁忙的港口城市，是整个地中海最著名的集商业、贸易、旅游于一身的水上都市；14～15世纪为威尼斯全盛时期，成为意大利最强大和最富有的海上“共和国”、地中海贸易中心之一。16世纪始，随着哥伦布发现美洲大陆，威尼斯逐渐衰落，1797年,威尼斯屈从于拿破仑的统治，有着一千多年历史的威尼斯共和国从此灭亡。1849年反奥地利的独立战争取得胜利。直到1866年威尼斯地区和意大利才实现统一。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;现在生活在威尼斯的当地人只有老人及旅游业者，老人一般为退休工人, 平时会在咖啡吧和朋友聊天打牌，但是周末在外地工作的亲人会回家团聚，像中国人重视亲情一样。他们平时喜欢冬季到附近的山上滑雪泡温泉，夏天喜欢到海边享受阳光，另外一年一度的嘉年华(狂欢节)是威尼斯人引以为傲的活动，每年2月底人人都会参与。<br/>
+        &emsp;&emsp;由于众多河道，威尼斯水道是城市的马路，市内没有汽车和自行车，也没有交通指挥灯 ，取而代之的是独一无二的水上巴士和传统的代步工具贡多拉(Gondola，小船)。船是市内唯一的交通工具。除了小艇以外，所有交通工具都是明令禁止的。 乘坐贡多拉是在威尼斯最奢侈的一件事，可是这样的奢侈看起来光鲜，却要忍受不是很好闻的湖水味。<br/>
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../wns/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;在16世纪期间，威尼斯成为欧洲最重要的音乐中心，以威尼斯乐派和作曲家创造出双重合唱风格，威尼是早期的音乐印刷中心，佩特鲁奇几乎在印刷技术出现后就开始出版音乐乐谱。而他的出版公司也吸引了全欧洲作曲家的目光，尤其是法国与法兰德斯。16世纪末，威尼斯逐渐发展得因音乐成就而闻名，例如安德烈·加布里埃利与乔凡尼·加布里埃利创造的大规模合唱与器乐。<br />
+      &emsp;&emsp;在这一个世纪，威尼斯是欧洲的印刷业中心，也是德国以外第一座拥有印刷厂的城市，在1500年时拥有417间印刷业者。最重要的出版社是阿杜思·曼尼修斯的阿杜思出版社，在1499年出版的《寻爱绮梦》被认为是文艺复兴时期最美丽的著作之一，并确立现代的标点符号、页面版式及斜体的形式。他首次印刷则是亚里斯多德的作品。<br />
+    </p>
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt" >当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../wns/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">醋渍沙丁鱼</h2>
+          <span>&emsp;&emsp;当地人制作这道菜时，先将沙丁鱼切块油炸，炸熟之后在加入炒软的洋葱，然后跟葡萄干和松子搅拌调味后，放入醋里腌制，虽然这道菜比较酸，但也是因为酸，所以制作出来的鱼肉味道非常清爽，营养也丰富，家人也常说，多吃醋有利于血液循环，可以促进代谢，所以这道菜也是非常健康，很受威尼斯人喜爱。<br/>
+      </span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../wns/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">墨鱼面</h2>
+        <span>&emsp;&emsp;墨鱼面是威尼斯的一道特色美食，来威尼斯旅游的人，一定会先尝尝全球最正宗是墨鱼面。墨鱼面是用新鲜墨鱼汁跟面混合而成，然后再用墨鱼汁煮面，煮好了面条再用洋葱、墨鱼肉、欧芹炒制出配菜，与墨鱼面拌在一起，虽然煮出来的墨鱼面黑乎乎的，颜色不深很美观，但是味道很是鲜美，而且面非常的有嚼头，有弹性，吃得时候也不会有腥味。
+    </span>
+    </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../wns/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">扇贝螃蟹沙拉</h2>
+        <span>&emsp;&emsp;威尼斯人最喜欢吃的扇贝螃蟹沙拉,也是他们自创的特色美食，这道沙拉是用当地的扇贝、虾和墨鱼等多种海鲜混合在一起，配上洋葱等配菜，另外还会加上橄榄油、柠檬汁、白葡萄酒等其他的调味品，味道非常的清新爽口，不需要其他复杂的调味，可以品尝到非常鲜美的海味。因为这道菜运用的海鲜食材比较多，所以价格也会稍微贵一点，但是非常值得一试。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/884999652833759232.xml?v=202106211742021',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>

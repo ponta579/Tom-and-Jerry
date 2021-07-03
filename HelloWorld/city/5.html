@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="../img/icon.png">
+  <!-- 主CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/mainCss.css">
+  <title>捷克-布拉格</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="imgBox">
+      <img id="loadingImg" src="../img/loading.gif" alt="loading..." />
+      <p style="font-size: 20px">穿越中...</p>
+    </div>
+  </div>
+  <!--导航栏-->
+  <ul class="header">
+    <a class="headerLi" href="../home.html"><li class="headerLiA">回到首页</li></a>
+    <a class="headerLi"  id="travel"><li class="headerLiA">换个地方</li></a>
+    <li class="headerLi">
+      <span class="headerLiA">书签</span>
+      <ul>
+        <li id="toPanorama">全景图</li>
+        <li id="toCityDscb">城市速写</li>
+        <li id="toHistory">历史沿革</li>
+        <li id="toLife">当地生活</li>
+        <li id="toCulture">文化</li>
+        <li id="toFood">美食推荐</li>
+      </ul>
+    </li>
+    <a class="headerLi" id="aboutUs"><li class="headerLiA">关于我们</li></a>
+  </ul>
+  <!--全景图部分-->
+  <div class="panorama" id=pano style="z-index: 1;"><a id="panorama"></a>
+    <noscript>
+      <table style="width:100%;height:100%;">
+        <tr style="vertical-align:middle;">
+          <td>
+            <div style="text-align:center;">
+              ERROR:<br/><br/>
+              Javascript not activated<br/><br/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </noscript>
+  </div>
+  <div class="explaination">
+    <img class="expImg" src="../img/pointer.png" />
+    <span class="illustrate" style="float: left;">&nbsp;千亿级像素全景图，鼠标旋转缩放</span>
+    <span class="illustrate">捷克-布拉格</span>
+  </div>
+  <!--介绍部分-->
+  <!--欢迎-->
+  <div class="welcome">
+    <!--轮播图-->
+    <div class="turn">
+      <div class="pic">
+        <img class="welcomeImg" src="../blg/welcome1.jpeg" />
+        <img class="welcomeImg" src="../blg/welcome2.jpeg" />
+        <img class="welcomeImg" src="../blg/welcome3.jpeg" />
+        <img class="welcomeImg" src="../blg/welcome4.jpeg" />
+        <img class="welcomeImg" src="../blg/welcome5.jpeg" />
+      </div>
+      <!--小圆点-->
+      <div class="swiper">
+        <b class='rudis'></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      </div>
+    </div>
+    <!--欢迎文字-->
+    <div id="welcomeDsc">
+      <h1 class="h1" style="text-align:center;margin-bottom: 0;">捷克-布拉格</h1>
+      <p class="wE">Welcome to Prague，Czech Republicd</p>
+    </div>
+  </div>
+  <!--城市速写-->
+  <div class="cityDscb"><a id="cityDscb"></a>
+    <h2 class="tt">城市速写</h2>
+    <p>
+      &emsp;&emsp;布拉格是捷克共和国的首都和最大的城市，地处欧洲大陆的中心，伏尔塔瓦河布两岸，面积约为496平方千米，人口约121万。布拉格市共分为22个区，而且每年都在不断扩张。其中的1-6区为市中心区域。主要景区集中在布拉格一区及伏尔塔瓦河(VLTAVA)两岸，无论是乘坐地铁、有轨电车或者步行都十分快捷方便。布拉格游客最集中的地方是老城广场，无论是坐在广场的露天咖啡等待天文钟每到整点的耶稣十二门徒木偶报时，或是从广场穿过曲折沧桑的老建筑、小巷步行到MUSTEK的购物区的各个有趣的小店购物都是很有意思的经历。
+    </p>
+    <a id="history"></a>
+  </div>
+  <!--历史沿革-->
+  <div class="history">
+    <div class="historyImg">
+      <img style="width: 100%;height: 100%" src="../blg/history.jpeg" />
+    </div>
+    <div class="history2">
+      <h2 class="tt" style="display: inline;">历史沿革</h2>
+      <p>
+        &emsp;&emsp;布拉格是欧洲的历史名城，始建于公元9世纪。14世纪，布拉格在神圣罗马帝国卢森堡王朝的查理四世统治下达到鼎盛时期。此时中欧、北欧和东欧第一所大学——查理大学兴建起来，它是捷克最古老的大学。老城的旁边的布拉格新城也修建于这个时期，查理大桥架起在新城和老城之间。当时，布拉格是欧洲的第三大城市，拥有众多的教堂、一个造币厂，德国和意大利的商人和银行家聚集于此。<br />
+        &emsp;&emsp;1689年，一场大火烧毁了布拉格，但随后即得以重建。之后，布拉格经历了多次战乱和政治事件，包括两次世界大战和“布拉格之春”、“天鹅绒革命”等。所幸城中的大部分历史建筑都躲过了战火，被很好地保存了下来。今天，布拉格仍然是欧洲最美丽的城市之一。
+      </p>
+    </div>
+  </div>
+  <!--当地生活-->
+  <div class="life"><a id="life"></a>
+    <div class="life2">
+      <h2 class="tt" style="display: inline;">当地生活</h2>
+      <p>
+        &emsp;&emsp;布拉格广场经常很热闹，挤满了来自世界各地的游客，旁边的咖啡馆和酒吧坐满了客人，广场旁边也有各种的街头表演。每当天文钟的钟声将要敲响，就会聚满观赏的游人，钟声过后，热烈的掌声和欢呼声随即响起。即便是这么多的游人，这个广场依然非常干净，也没有任何异味，热闹而不杂乱。<br />
+        &emsp;&emsp;在布拉格的大街上，那种敦厚、宽敞，有着中世纪遗风的老电车行驶在自己的轨道上，和那些古老的古典建筑相映成趣。它们全天运行，就算在餐馆吃饭、休闲娱乐到很晚，或者在街上夜游、散步到很迟，也不用担心没有车可以返回住处。但捷克人并不是性格很好的人，在捷克有个著名的说法：“Customers are god，but not in Czech(顾客是上帝的说法在捷克没有用)”。
+      </p>
+    </div>
+    <div class="lifeImg">
+      <img src="../blg/life.jpeg" style="width: 100%;height: 100%" />
+    </div>
+  </div>
+  <!--文化-->
+  <div class="cityDscb"><a id="culture"></a>
+    <h2 class="tt">文化</h2>
+    <p>
+      &emsp;&emsp;布拉格是欧洲的文化重镇，也一直是捷克的历史文化中心。历史上，布拉格曾经出现了音乐、文学等领域的许多杰出人物，如作曲家莫扎特、斯美塔那、德沃夏克，作家卡夫卡、瓦茨拉夫·哈维尔、米兰·昆德拉等人都在这里进行过创作活动。现在的布拉格仍然保留了浓郁的文化氛围，众多的歌剧院、音乐厅、博物馆、美术馆、图书馆、电影院等文化机构提供了丰富多彩的文化活动。此外，布拉格几乎每个月都会举办一些国际性的文化活动，其中尤以各种音乐活动最为显著。著名的布拉格之春国际音乐节就是具有国际影响的音乐盛事。<br />
+      &emsp;&emsp;市内有查理大学（又称布拉格大学）、工学院、音乐学院等高等院校和国家科学院、农业科学院等科研机构。剧院、博物馆和美术馆众多。古建筑风格多样，包括布拉格城堡、王宫、教堂等。音乐久负盛名，每年一度的布拉格之春音乐会，为世界上重要的音乐盛会。市内多公园、绿地。布拉格有近百个风格主题各异的博物馆，如果是博物馆爱好者可以考虑在每年一次的“布拉格博物馆之夜”来旅行，几十家博物馆免费开放，而且还有免费巴士带你往返于不同的博物馆。
+  </div>
+  <!--美食-->
+  <div class="food"><a id="food"></a>
+    <div style="text-align: center;"><span class="tt">当地美食推荐</span></div>
+    <div class="food1" style="left:7%;">
+      <img src="../blg/food1.jpeg" class="foodImg" />
+      <div class="foodDscb">
+          <h2 style="color: #111">炖牛肉</h2>
+          <span>&emsp;&emsp;捷克当地一道有名的美食——炖牛肉。当地人炖牛肉的方法很复杂，要添加二十三种不同的调味料，将牛肉炖酥，然后淋上准备好的酱汁，配上一些蔬菜，才算完成。布拉格街头巷尾的餐馆招牌上基本上都有这道菜。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:37.5%;">
+      <img src="../blg/food2.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">烤猪肘</h2>
+        <span>&emsp;&emsp;捷克人擅长烹饪各种肉类食品，当地的烤猪肘是一大特色，几乎每个餐厅都会有烤猪肘这道菜，一盘烤猪肘够两个人饱餐一顿，烤猪肘外焦里嫩，肉质鲜美，有的餐厅会提供特色汁料蘸酱，来布拉格不可不尝。厚厚的猪皮层次分明，最外一层大约半毫米，是直接与火接触到部分，但却丝毫不糊不焦，酥脆有嚼头。</span>
+      </div>
+    </div>
+    <div class="food1" style="left:68%;">
+      <img src="../blg/food3.jpeg" class="foodImg" />
+      <div class="foodDscb">
+        <h2 style="color: #111">捷克啤酒</h2>
+        <span>&emsp;&emsp;布拉格是啤酒爱好者的天堂，在这里用不到一美元的钱，就可以买到两杯半升装的顶级皮尔森啤酒，简直比饮料还便宜。据说捷克人不把啤酒当酒，而是当成有滋味儿的水，不管男女老幼，人人都离不开它。捷克啤酒最有名的品牌有百威(Budvar)和皮尔森(Plzensky Prazdroj)啤酒，当然布拉格当地产的斯达诺拉曼啤酒(Staropramen)也非常值得推荐。</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <div class="footer1">
+      <br />
+      <p>
+        <span id="contact">联系我们</span> 丨 ©2021 Hello World 丨 网页制作12组课设
+      </p>
+    </div>
+  </div>
+  <!--右下角工具栏-->
+  <div class="tool">
+    <img id="topImg" src="../img/top.png" />
+    <img id="reloadImg" src="../img/reload.png" />
+  </div>
+</body>
+<!--jQuery-->
+<script src="../js/jquery-3.6.0.js"></script>
+<!-- js文件 -->
+<script type="text/javascript" src="../js/mainJs.js"></script>
+<!--全景图部分js-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/jquery.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/bootstrap.min.js?v=1617073553385"></script>
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/crypto-js.min.js?v=1617073553385"></script><!--自动播放-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/js/api.js?v=1617073553385"></script><!--全景图调用api-->
+<script type="text/javascript" src="http://pf.bigpixel.cn/app/data/static_new/plugins/krpano/tour.js?v=1617073553385"></script>
+<script type="text/javascript">
+  window.cityId = ``;
+  embedpano({
+    swf: window.baseTour + '/tour.swf',
+    xml: 'http://pf.bigpixel.cn/api/tour/xml/zh-CN/884998984735657984.xml?v=202106211742022',
+    target: 'pano',
+    html5: (document.domain ? 'prefer' : 'auto'),
+    mobilescale: 1.0,
+    passQueryParameters: true,
+    webglsettings: {preserveDrawingBuffer: true},
+  });
+  $(document).ready(function () {
+    $('[data-toggle=\'tooltip\']').tooltip();
+    let winresize = window.winresize = function () {
+      var ph = (typeof (window.innerHeight) === 'number') ? window.innerHeight : ((document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : ((document.body && document.body.clientHeight) ? document.body.clientHeight : 500));
+      document.getElementById('pano').style.height = (ph / 1.1) + 'px'//调整全景图宽度
+    }
+    winresize();
+    window.onresize = function () {
+      window.winresize();
+    };
+  });
+</script>
+</html>
